@@ -7,6 +7,10 @@ import { trpc } from "../utils/trpc";
 import Head from "next/head";
 import AuthWrapper from "../components/AuthWrapper";
 
+//fonts
+import "@fontsource/epilogue";
+import "@fontsource/work-sans";
+
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
