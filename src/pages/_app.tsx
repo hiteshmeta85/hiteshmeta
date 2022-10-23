@@ -5,6 +5,7 @@ import type { Session } from "next-auth";
 import type { AppType } from "next/app";
 import { trpc } from "../utils/trpc";
 import Head from "next/head";
+import AuthWrapper from "../components/AuthWrapper";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -16,7 +17,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <title>hiteshmeta</title>
       </Head>
       <SessionProvider session={session}>
-        <Component {...pageProps} />
+        <AuthWrapper>
+          <Component {...pageProps} />
+        </AuthWrapper>
       </SessionProvider>
     </>
   );
