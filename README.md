@@ -1,7 +1,5 @@
 <h1 align="center">Personal Portfolio</h1>
 
------
-
 ## 🛠 Technologies used
 
 - [Next-Auth.js](https://next-auth.js.org/)
