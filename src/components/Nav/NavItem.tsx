@@ -1,7 +1,8 @@
-import { ReactElement, useState } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
+import { IconType } from "react-icons";
 
-export const NavItem = ({ slug, name, icon }: { slug: string, name: string, icon: ReactElement }) => {
+export const NavItem = ({ slug, name, icon }: { slug: string, name: string, icon: IconType }) => {
   const router = useRouter();
   const [isMouseOver, setIsMouseOver] = useState(false);
 
@@ -19,7 +20,7 @@ export const NavItem = ({ slug, name, icon }: { slug: string, name: string, icon
           rounded-sm shadow hover:shadow-xl hover:scale-110 duration-300 ease-in-out p-2
       `}
     >
-      {icon}
+      {React.createElement(icon, { width: '1rem', className: 'text-zinc-100' })}
 
       {isMouseOver &&
         <span

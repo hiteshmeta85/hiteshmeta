@@ -11,7 +11,7 @@ const Nav = () => {
             <NavItem
               key={index}
               slug={item.slug}
-              icon={<item.icon size="1rem" className="text-zinc-100" />}
+              icon={item.icon}
               name={item.name}
             />
           );
