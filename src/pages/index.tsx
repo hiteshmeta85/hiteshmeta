@@ -7,7 +7,7 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col-reverse lg:flex-row justify-center gap-4 lg:gap-12">
+      <div className="flex flex-col-reverse lg:flex-row justify-center gap-4 lg:gap-16">
         <div className="leading-none">
           <h2 className="text-zinc-200 font-epilogue text-[2.5rem] font-extrabold mb-2">
             Hitesh
