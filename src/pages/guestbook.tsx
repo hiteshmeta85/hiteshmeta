@@ -8,6 +8,7 @@ import CustomButton from "../components/Button/CustomButton";
 import { z } from "zod";
 import { toast } from "react-hot-toast";
 import MessageCard from "../components/Cards/MessageCard";
+import { NextPage } from "next";
 
 const inputSchema = z.object({
   message: z
@@ -16,7 +17,7 @@ const inputSchema = z.object({
     .max(280, { message: "Message should not be more than 280 characters!" })
 });
 
-const Guestbook = () => {
+const Guestbook: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const { data: session } = useSession();
