@@ -1,6 +1,15 @@
 import { FiBookOpen, FiClock, FiHeadphones, FiHome, FiPaperclip, FiUser } from "react-icons/fi";
+import { IconType } from "react-icons";
 
-export const NavbarItems = [
+export type NavItem = {
+  name: string;
+  slug: string;
+  icon: IconType;
+};
+
+export type NavItems = NavItem[];
+
+export const NavbarItems: NavItems = [
   {
     name: "Home",
     slug: "/",
