@@ -1,5 +1,5 @@
 ---
-title: 'Now'
+title: "Now"
 ---
 
 Currently, I'm learning t3-stack (typescript, trpc, tailwind) along with next.js, prisma and next-auth.

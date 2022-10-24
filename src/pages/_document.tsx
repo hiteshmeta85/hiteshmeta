@@ -5,12 +5,12 @@ import Document, {
   Head,
   Html,
   Main,
-  NextScript
+  NextScript,
 } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(
-    ctx: DocumentContext
+    ctx: DocumentContext,
   ): Promise<DocumentInitialProps> {
     return await Document.getInitialProps(ctx);
   }
@@ -19,12 +19,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="Personal Portfolio Website of Hitesh Meta" />
+          <meta
+            name="description"
+            content="Personal Portfolio Website of Hitesh Meta"
+          />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
-        <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

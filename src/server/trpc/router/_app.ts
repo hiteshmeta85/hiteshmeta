@@ -7,7 +7,7 @@ import { messageRouter } from "./message";
 export const appRouter = router({
   example: exampleRouter,
   auth: authRouter,
-  message: messageRouter
+  message: messageRouter,
 });
 
 // export type definition of API

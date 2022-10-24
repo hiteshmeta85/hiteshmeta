@@ -1,4 +1,11 @@
-import { FiBookOpen, FiClock, FiHeadphones, FiHome, FiPaperclip, FiUser } from "react-icons/fi";
+import {
+  FiBookOpen,
+  FiClock,
+  FiHeadphones,
+  FiHome,
+  FiPaperclip,
+  FiUser,
+} from "react-icons/fi";
 import { IconType } from "react-icons";
 
 export type NavItem = {
@@ -13,31 +20,31 @@ export const NavbarItems: NavItems = [
   {
     name: "Home",
     slug: "/",
-    icon: FiHome
+    icon: FiHome,
   },
   {
     name: "About",
     slug: "/about",
-    icon: FiUser
+    icon: FiUser,
   },
   {
     name: "Now",
     slug: "/now",
-    icon: FiClock
+    icon: FiClock,
   },
   {
     name: "Links",
     slug: "/links",
-    icon: FiPaperclip
+    icon: FiPaperclip,
   },
   {
     name: "Guestbook",
     slug: "/guestbook",
-    icon: FiBookOpen
+    icon: FiBookOpen,
   },
   {
     name: "Spotify",
     slug: "/spotify",
-    icon: FiHeadphones
-  }
+    icon: FiHeadphones,
+  },
 ];

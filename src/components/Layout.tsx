@@ -8,12 +8,16 @@ import Mail from "./Nav/Mail";
 const Layout = ({ children }: { children: ReactElement }) => {
   return (
     <>
-      <Nav/>
-      <Mail/>
-      <MobileNav/>
-      <div className={"container relative min-h-[100vh] pb-20 no-scrollbar-visible"}>
+      <Nav />
+      <Mail />
+      <MobileNav />
+      <div
+        className={
+          "no-scrollbar-visible container relative min-h-[100vh] pb-20"
+        }
+      >
         {children}
-        <Footer/>
+        <Footer />
         <Toaster
           toastOptions={{
             style: {

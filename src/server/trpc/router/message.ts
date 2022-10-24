@@ -10,8 +10,8 @@ export const messageRouter = router({
           data: {
             message: input.message,
             author: ctx?.session?.user?.name as string,
-            authorId: ctx.session.user.id
-          }
+            authorId: ctx.session.user.id,
+          },
         });
       } catch (error) {
         console.log(error);
@@ -25,8 +25,8 @@ export const messageRouter = router({
       select: {
         message: true,
         updatedAt: true,
-        author: true
-      }
+        author: true,
+      },
     });
-  })
+  }),
 });

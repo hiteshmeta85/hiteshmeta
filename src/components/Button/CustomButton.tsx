@@ -6,8 +6,8 @@ interface CustomButton {
   onClick?: () => void;
   icon: IconType;
   type?: "button" | "reset" | "submit";
-  styles?: string
-  disabled?: boolean
+  styles?: string;
+  disabled?: boolean;
 }
 
 const CustomButton = (props: CustomButton) => {
@@ -18,11 +18,12 @@ const CustomButton = (props: CustomButton) => {
       onClick={onClick || undefined}
       type={type || "button"}
       disabled={disabled}
-      className={
-        `rounded-lg bg-zinc-900 px-4 py-2 px-7 mt-3 text-white hover:shadow-lg ${styles}`
-      }
+      className={`mt-3 rounded-lg bg-zinc-900 px-4 py-2 px-7 text-white hover:shadow-lg ${styles}`}
     >
-      <div className="flex gap-2 items-center justify-center">{React.createElement(icon)}<span>{title}</span></div>
+      <div className="flex items-center justify-center gap-2">
+        {React.createElement(icon)}
+        <span>{title}</span>
+      </div>
     </button>
   );
 };

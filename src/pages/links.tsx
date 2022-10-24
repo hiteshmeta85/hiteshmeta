@@ -9,18 +9,23 @@ const Links: NextPage = () => {
     <Layout>
       <div>
         <div>
-          <h2 className="text-zinc-200 leading-none text-[2.5rem] font-extrabold">
+          <h2 className="text-[2.5rem] font-extrabold leading-none text-zinc-200">
             Links
           </h2>
-          <p className="text-zinc-400 my-3 leading-tight">
+          <p className="my-3 leading-tight text-zinc-400">
             All my profile links to find me on the web.
           </p>
         </div>
-        <div
-          className="bg-gradient-to-r from-neutral-800 to-zinc-800 px-4 py-4 rounded-lg shadow-xl mt-6 shadow-xl p-4 flex justify-between gap-2">
-          <div className="flex flex-col w-full gap-2">
+        <div className="mt-6 flex justify-between gap-2 rounded-lg bg-gradient-to-r from-neutral-800 to-zinc-800 p-4 px-4 py-4 shadow-xl shadow-xl">
+          <div className="flex w-full flex-col gap-2">
             {links.map((link, index) => (
-              <LinkCard key={index} icon={link.icon} name={link.name} url={link.url} value={link.value} />
+              <LinkCard
+                key={index}
+                icon={link.icon}
+                name={link.name}
+                url={link.url}
+                value={link.value}
+              />
             ))}
           </div>
         </div>

@@ -4,8 +4,8 @@ import MobileNavItem from "./MobileNavItem";
 
 const MobileNav = () => {
   return (
-    <div className="lg:hidden pt-4 pb-0 container">
-      <div className="h-full flex gap-4 overflow-x-scroll no-scrollbar-visible">
+    <div className="container pt-4 pb-0 lg:hidden">
+      <div className="no-scrollbar-visible flex h-full gap-4 overflow-x-scroll">
         {NavbarItems.map((item, index) => {
           return (
             <MobileNavItem key={index} slug={item.slug} icon={item.icon} />

@@ -16,7 +16,7 @@ const MobileNavItem = (props: props) => {
       onClick={() => router.push(slug)}
       className={`
           ${router.asPath === slug ? "bg-zinc-600" : "bg-zinc-800"} 
-          rounded-sm shadow hover:shadow-xl hover:scale-110 duration-300 ease-in-out p-2
+          rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl
       `}
     >
       {React.createElement(icon, { width: "1rem", className: "text-zinc-100" })}
