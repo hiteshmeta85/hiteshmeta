@@ -62,3 +62,12 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model Message {
+  id        String   @id @default(cuid())
+  message   String   @db.VarChar(280)
+  author    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  authorId  String
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import { useSession } from "next-auth/react";
+import { trpc } from "../utils/trpc";
 
 const AuthWrapper = ({ children }: { children: React.ReactNode }) => {
-  const { status } = useSession();
+  const { status } = trpc.auth.getSession.useQuery();
 
   if (status === 'loading') {
     return null;

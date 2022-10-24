@@ -8,8 +8,9 @@ import Head from "next/head";
 import AuthWrapper from "../components/AuthWrapper";
 
 //fonts
-import "@fontsource/epilogue";
-import "@fontsource/work-sans";
+import "@fontsource/epilogue/800.css";
+import "@fontsource/epilogue/700.css";
+import "@fontsource/epilogue/400.css";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
