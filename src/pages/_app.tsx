@@ -14,6 +14,12 @@ import "@fontsource/epilogue/400.css";
 
 // nprogress bar
 import NextNProgress from "nextjs-progressbar";
+import PageTransitionEffect from "../components/PageTransitionEffect";
+
+// navbar
+import Nav from "../components/Nav/Nav";
+import Mail from "../components/Nav/Mail";
+import MobileNav from "../components/Nav/MobileNav";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -32,7 +38,12 @@ const MyApp: AppType<{ session: Session | null }> = ({
             startPosition={0}
             options={{ showSpinner: false }}
           />
-          <Component {...pageProps} />
+          <Nav />
+          <Mail />
+          <MobileNav />
+          <PageTransitionEffect>
+            <Component {...pageProps} />
+          </PageTransitionEffect>
         </AuthWrapper>
       </SessionProvider>
     </>
