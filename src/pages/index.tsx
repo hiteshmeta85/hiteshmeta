@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <Layout>
       <div className="flex flex-col-reverse justify-center gap-4 lg:flex-row lg:gap-16">
         <div className="leading-none">
-          <h2 className="font-epilogue mb-2 text-[2.5rem] font-extrabold text-zinc-200">
+          <h2 className="mb-2 text-[2.5rem] font-extrabold text-zinc-200">
             Hitesh
           </h2>
           <p className="mb-4 text-zinc-300">Full Stack Web Developer</p>

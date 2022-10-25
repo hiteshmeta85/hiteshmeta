@@ -1,5 +1,7 @@
 import { NavItem } from "./NavItem";
 import { NavbarItems } from "./NavItems";
+import dynamic from "next/dynamic";
+const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
 
 const Nav = () => {
   return (
@@ -15,6 +17,7 @@ const Nav = () => {
             />
           );
         })}
+        <ThemeButton />
         <div className="mt-2 h-full border-r-2 border-zinc-800" />
       </div>
     </div>

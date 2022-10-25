@@ -21,6 +21,9 @@ import Nav from "../components/Nav/Nav";
 import Mail from "../components/Nav/Mail";
 import MobileNav from "../components/Nav/MobileNav";
 
+// next-themes - theme provider
+import { ThemeProvider } from "next-themes";
+
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
@@ -38,12 +41,14 @@ const MyApp: AppType<{ session: Session | null }> = ({
             startPosition={0}
             options={{ showSpinner: false }}
           />
-          <Nav />
-          <Mail />
-          <MobileNav />
-          <PageTransitionEffect>
-            <Component {...pageProps} />
-          </PageTransitionEffect>
+          <ThemeProvider defaultTheme="dark" attribute="class">
+            <Nav />
+            <Mail />
+            <MobileNav />
+            <PageTransitionEffect>
+              <Component {...pageProps} />
+            </PageTransitionEffect>
+          </ThemeProvider>
         </AuthWrapper>
       </SessionProvider>
     </>
