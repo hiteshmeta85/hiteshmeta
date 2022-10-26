@@ -5,7 +5,6 @@ import type { Session } from "next-auth";
 import type { AppType } from "next/app";
 import { trpc } from "../utils/trpc";
 import Head from "next/head";
-import AuthWrapper from "../components/AuthWrapper";
 
 // fonts
 import "@fontsource/epilogue/800.css";
@@ -34,22 +33,20 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <title>hiteshmeta</title>
       </Head>
       <SessionProvider session={session}>
-        <AuthWrapper>
-          <NextNProgress
-            color="#a1a1aa"
-            height={3}
-            startPosition={0}
-            options={{ showSpinner: false }}
-          />
-          <ThemeProvider defaultTheme="dark" attribute="class">
-            <Nav />
-            <Mail />
-            <MobileNav />
-            <PageTransitionEffect>
-              <Component {...pageProps} />
-            </PageTransitionEffect>
-          </ThemeProvider>
-        </AuthWrapper>
+        <NextNProgress
+          color="#a1a1aa"
+          height={3}
+          startPosition={0}
+          options={{ showSpinner: false }}
+        />
+        <ThemeProvider defaultTheme="dark" attribute="class">
+          <Nav />
+          <Mail />
+          <MobileNav />
+          <PageTransitionEffect>
+            <Component {...pageProps} />
+          </PageTransitionEffect>
+        </ThemeProvider>
       </SessionProvider>
     </>
   );
