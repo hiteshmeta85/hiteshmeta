@@ -20,7 +20,7 @@ const inputSchema = z.object({
 const Guestbook: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
   const { data: messages } = trpc.message.getAllMessages.useQuery();
   const ctx = trpc.useContext();
 
@@ -60,6 +60,10 @@ const Guestbook: NextPage = () => {
     setMessage("");
     setLoading(false);
   };
+
+  if (status === "loading") {
+    return null;
+  }
 
   return (
     <Layout>
