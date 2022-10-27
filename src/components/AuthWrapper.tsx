@@ -4,7 +4,7 @@ import { trpc } from "../utils/trpc";
 const AuthWrapper = ({ children }: { children: React.ReactNode }) => {
   const { status } = trpc.auth.getSession.useQuery();
 
-  if (status === 'loading') {
+  if (status === "loading") {
     return null;
   }
 

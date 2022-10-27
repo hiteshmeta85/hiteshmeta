@@ -6,15 +6,16 @@ interface MessageCard {
   date: string;
 }
 
-
 const CommentCard = (props: MessageCard) => {
   const { message, name, date } = props;
 
   return (
-    <div className="py-4 leading-8 px-4 rounded-lg cursor-pointer hover:shadow-md hover:bg-[#1D1D1F]">
-      <p className="text-zinc-200 text-lg tracking-wide">{message}</p>
-      <p className="text-zinc-400 text-sm mt-1">by <span className="capitalize">{name}</span> <span
-        className="px-2">·</span> on <span>{date}</span></p>
+    <div className="cursor-pointer rounded-lg py-4 px-4 leading-8 hover:bg-[#1D1D1F] hover:shadow-md">
+      <p className="text-lg tracking-wide text-zinc-200">{message}</p>
+      <p className="mt-1 text-sm text-zinc-400">
+        by <span className="capitalize">{name}</span>{" "}
+        <span className="px-2">·</span> on <span>{date}</span>
+      </p>
     </div>
   );
 };

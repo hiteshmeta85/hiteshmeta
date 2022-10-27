@@ -4,20 +4,21 @@ import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
 
-const About = ({ content }: InferGetServerSidePropsType<typeof getStaticProps>) => {
-
+const About = ({
+  content,
+}: InferGetServerSidePropsType<typeof getStaticProps>) => {
   return (
     <Layout>
       <div className="flex flex-row gap-4 lg:gap-16">
         <div className="leading-none">
-          <h2 className="text-zinc-200 text-[2.5rem] font-extrabold mb-2">
+          <h2 className="mb-2 text-[2.5rem] font-extrabold text-zinc-200">
             About Me
           </h2>
-          <p className="text-zinc-400 mb-4">
+          <p className="mb-4 text-zinc-400">
             Most of the things you (maybe) want to know about me
           </p>
           <div
-            className="leading-5 prose prose-p:text-zinc-300 prose-a:text-zinc-400 text-sm underline-offset-4"
+            className="prose text-sm leading-5 underline-offset-4 prose-p:text-zinc-300 prose-a:text-zinc-400"
             dangerouslySetInnerHTML={{ __html: md().render(content) }}
           />
         </div>
@@ -35,7 +36,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       frontmatter,
-      content
-    }
+      content,
+    },
   };
 };

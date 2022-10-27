@@ -1,11 +1,12 @@
 import { NavItem } from "./NavItem";
 import { NavbarItems } from "./NavItems";
+import dynamic from "next/dynamic";
+const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
 
 const Nav = () => {
-
   return (
-    <div className="hidden lg:block fixed h-full pt-6 px-6">
-      <div className="h-full flex flex-col justify-start items-center gap-4">
+    <div className="fixed hidden h-full px-6 pt-6 lg:block">
+      <div className="flex h-full flex-col items-center justify-start gap-4">
         {NavbarItems.map((item, index) => {
           return (
             <NavItem
@@ -16,7 +17,8 @@ const Nav = () => {
             />
           );
         })}
-        <div className="border-r-2 border-zinc-800 h-full mt-2" />
+        <ThemeButton />
+        <div className="mt-2 h-full border-r-2 border-zinc-800" />
       </div>
     </div>
   );
