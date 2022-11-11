@@ -68,24 +68,22 @@ const Guestbook: NextPage = () => {
   return (
     <Layout>
       <div>
-        <div>
-          <h2 className="text-[2.5rem] font-extrabold leading-none text-zinc-200">
-            Guestbook
-          </h2>
-          <p className="my-3 leading-tight text-zinc-400">
+        <div className="leading-none">
+          <h2 className="heading mb-2">Guestbook</h2>
+          <p className="h5 mb-4 leading-5">
             Leave a message for me and other visitors here! It can be anything -
             appreciation, criticism, or just a random message. Just be nice!
           </p>
         </div>
 
         {/* Auth & Message Form */}
-        <div className={`mt-6 rounded-lg bg-zinc-800 px-4 py-4 shadow-xl`}>
+        <div
+          className={`container-gradient mt-6 rounded-lg px-4 py-4 shadow-xl`}
+        >
           {!session ? (
             <>
-              <p className="text-xl font-bold tracking-wide text-zinc-200">
-                Leave a Message👇
-              </p>
-              <p className="text-sm text-zinc-300">
+              <p className="h5 text-xl font-bold">Leave a Message👇</p>
+              <p className="text">
                 You need to be signed in to post a message.
               </p>
               <CustomButton
@@ -102,7 +100,7 @@ const Guestbook: NextPage = () => {
                   name="message"
                   onChange={(e) => setMessage(e.target.value)}
                   required={true}
-                  className="w-full rounded-md bg-zinc-900 p-4 text-zinc-300 caret-zinc-300 focus:outline-none"
+                  className="input-gradient h5 w-full rounded-md p-4 focus:outline-none"
                   rows={4}
                 />
                 <div className="flex justify-between gap-3">
@@ -138,7 +136,7 @@ const Guestbook: NextPage = () => {
               );
             })
           ) : (
-            <p className="text-zinc-300">fetching the messages ...</p>
+            <p className="text">fetching the messages ...</p>
           )}
         </div>
       </div>
