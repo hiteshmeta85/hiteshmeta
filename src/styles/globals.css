@@ -13,6 +13,9 @@ body {
   .heading {
     @apply text-[2.5rem] font-extrabold text-zinc-900 dark:text-zinc-200;
   }
+  .h4 {
+    @apply text-zinc-900 dark:text-zinc-200;
+  }
   .h5 {
     @apply text-zinc-800 dark:text-zinc-300;
   }
