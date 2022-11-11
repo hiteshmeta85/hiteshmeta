@@ -1,6 +1,7 @@
 import React from "react";
 import { NavbarItems } from "./NavItems";
 import MobileNavItem from "./MobileNavItem";
+import ThemeButton from "./ThemeButton";
 
 const MobileNav = () => {
   return (
@@ -11,6 +12,7 @@ const MobileNav = () => {
             <MobileNavItem key={index} slug={item.slug} icon={item.icon} />
           );
         })}
+        <ThemeButton />
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const ThemeButton = () => {
         setTheme(theme === "dark" ? "light" : "dark");
       }}
     >
-      <div className="p-2 text-zinc-100">
+      <div className="icon p-2">
         {theme === "dark" ? <FiMoon /> : <FiSun />}
       </div>
     </button>

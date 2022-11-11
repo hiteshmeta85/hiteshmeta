@@ -19,7 +19,7 @@ const MobileNavItem = (props: props) => {
           rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl
       `}
     >
-      {React.createElement(icon, { width: "1rem", className: "text-zinc-100" })}
+      {React.createElement(icon, { width: "1rem", className: "icon" })}
     </button>
   );
 };
