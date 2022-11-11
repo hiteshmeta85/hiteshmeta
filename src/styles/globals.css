@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  background: #18181b;
   font-family: Epilogue, serif;
 }
 
@@ -21,7 +20,7 @@ body {
     @apply text-sm text-zinc-700 dark:text-zinc-400;
   }
   .link {
-    @apply cursor-pointer text-zinc-500 duration-300 hover:text-zinc-600 dark:text-zinc-300 dark:hover:text-zinc-200;
+    @apply cursor-pointer text-zinc-500 duration-300 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-400;
   }
 }
 
