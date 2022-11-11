@@ -8,15 +8,11 @@ const Links: NextPage = () => {
   return (
     <Layout>
       <div>
-        <div>
-          <h2 className="text-[2.5rem] font-extrabold leading-none text-zinc-200">
-            Links
-          </h2>
-          <p className="my-3 leading-tight text-zinc-400">
-            All my profile links to find me on the web.
-          </p>
+        <div className="leading-none">
+          <h2 className="heading mb-2">Links</h2>
+          <p className="h5 mb-4">All my profile links to find me on the web.</p>
         </div>
-        <div className="mt-6 flex justify-between gap-2 rounded-lg bg-gradient-to-r from-neutral-800 to-zinc-800 p-4 px-4 py-4 shadow-xl shadow-xl">
+        <div className="container-gradient mt-6 flex justify-between gap-2 rounded-lg px-4 py-4 shadow-xl">
           <div className="flex w-full flex-col gap-2">
             {links.map((link, index) => (
               <LinkCard

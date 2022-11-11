@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <div className="flex flex-col-reverse justify-center gap-4 lg:flex-row lg:gap-16">
         <div className="leading-none">
           <h2 className="heading mb-2">Hitesh</h2>
-          <p className="h2 mb-4">Full Stack Web Developer</p>
+          <p className="h5 mb-4">Full Stack Web Developer</p>
           <p className="text">
             I build web apps! I&apos;m a Full-Stack Web Developer and a
             Third-year Computer Science Student, pursuing my degree from Pillai

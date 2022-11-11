@@ -18,11 +18,11 @@ const CustomButton = (props: CustomButton) => {
       onClick={onClick || undefined}
       type={type || "button"}
       disabled={disabled}
-      className={`mt-3 rounded-lg bg-zinc-900 px-4 py-2 px-7 text-white hover:shadow-lg ${styles}`}
+      className={`button-gradient h5 mt-3 rounded-lg px-4 py-2 px-7 hover:shadow-lg ${styles}`}
     >
       <div className="flex items-center justify-center gap-2">
         {React.createElement(icon)}
-        <span>{title}</span>
+        <p className="relative top-[1px]">{title}</p>
       </div>
     </button>
   );

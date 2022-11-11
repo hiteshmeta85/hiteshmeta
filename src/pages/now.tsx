@@ -11,14 +11,12 @@ const About = ({
     <Layout>
       <div className="flex flex-row gap-4 lg:gap-16">
         <div className="leading-none">
-          <h2 className="mb-2 text-[2.5rem] font-extrabold text-zinc-200">
-            Now
-          </h2>
-          <p className="mb-4 text-zinc-400">
+          <h2 className="heading mb-2">Now</h2>
+          <p className="h5 mb-4">
             The answer to &quot;What are you upto these days?&quot;
           </p>
           <div
-            className="prose text-sm leading-5 underline-offset-4 prose-h6:text-xs prose-h6:text-zinc-400 prose-p:text-zinc-300 prose-a:text-zinc-400"
+            className="prose-style"
             dangerouslySetInnerHTML={{ __html: md().render(content) }}
           />
         </div>

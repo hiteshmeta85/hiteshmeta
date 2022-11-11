@@ -13,14 +13,35 @@ body {
   .heading {
     @apply text-[2.5rem] font-extrabold text-zinc-900 dark:text-zinc-200;
   }
-  .h2 {
+  .h5 {
     @apply text-zinc-800 dark:text-zinc-300;
+  }
+  .h6 {
+    @apply text-xs text-zinc-600 dark:text-zinc-400;
   }
   .text {
     @apply text-sm text-zinc-700 dark:text-zinc-400;
   }
   .link {
     @apply cursor-pointer text-zinc-500 duration-300 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-400;
+  }
+  .prose-style {
+    @apply prose-p:text prose-a:link prose-h6:h6 prose text-sm leading-5 underline-offset-4;
+  }
+  .container-gradient {
+    @apply bg-gradient-to-r from-neutral-200 to-zinc-200 dark:from-neutral-800 dark:to-zinc-800;
+  }
+  .link-background-gradient {
+    @apply bg-gradient-to-r from-neutral-900/60 to-zinc-900/60;
+  }
+  .button-gradient {
+    @apply bg-white dark:bg-zinc-900;
+  }
+  .input-gradient {
+    @apply bg-white dark:bg-zinc-900;
+  }
+  .icon {
+    @apply text-zinc-100 dark:text-zinc-300;
   }
 }
 
