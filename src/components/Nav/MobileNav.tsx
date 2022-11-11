@@ -1,7 +1,8 @@
 import React from "react";
 import { NavbarItems } from "./NavItems";
 import MobileNavItem from "./MobileNavItem";
-import ThemeButton from "./ThemeButton";
+import dynamic from "next/dynamic";
+const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
 
 const MobileNav = () => {
   return (
