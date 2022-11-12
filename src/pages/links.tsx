@@ -2,7 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import Layout from "../components/Layout";
 import { socialLinks } from "../lib/socialLinks";
-import LinkCard from "../components/Links/LinkCard";
+import LinkCard from "../components/LinkCard";
 
 const Links: NextPage = () => {
   return (
