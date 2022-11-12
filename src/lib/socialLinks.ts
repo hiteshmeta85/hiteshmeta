@@ -8,9 +8,9 @@ export type Link = {
   icon: IconType;
 };
 
-export type Links = Link[];
+export type SocialLinks = Link[];
 
-export const links: Links = [
+export const socialLinks: SocialLinks = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/hitesh-meta/",

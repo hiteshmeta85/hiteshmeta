@@ -1,16 +1,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import { IconType } from "react-icons";
+import { NavItem as NavItemType } from "../../lib/navLinks";
 
-export const NavItem = ({
-  slug,
-  name,
-  icon,
-}: {
-  slug: string;
-  name: string;
-  icon: IconType;
-}) => {
+export const NavItem = ({ slug, name, icon }: NavItemType) => {
   const router = useRouter();
   const [isMouseOver, setIsMouseOver] = useState(false);
 
