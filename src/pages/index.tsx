@@ -1,25 +1,12 @@
 import Layout from "../components/Layout";
 import Image from "next/future/image";
 import Avatar from "../assets/avatar.jpeg";
-import axios from "axios";
 import PinnedRepos from "../components/PinnedRepos";
-import { useEffect, useState } from "react";
+import { Repo } from "../lib/types";
+import { GetStaticProps } from "next";
+import { getPinnedRepos } from "../lib/getPinnedRepos";
 
-const Home = () => {
-  const [pinnedRepos, setPinnedRepos] = useState([]);
-
-  const fetchData = async () => {
-    await axios(
-      `https://gh-pinned-repos.egoist.dev/?username=hiteshmeta85`,
-    ).then(function (response) {
-      setPinnedRepos(response.data);
-    });
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
+const Home = (props: { pinnedRepos: Repo[] }) => {
   return (
     <Layout>
       <div>
@@ -42,10 +29,21 @@ const Home = () => {
             />
           </div>
         </div>
-        {pinnedRepos.length > 0 && <PinnedRepos pinnedRepos={pinnedRepos} />}
+        <PinnedRepos pinnedRepos={props.pinnedRepos} />
       </div>
     </Layout>
   );
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const pinnedRepos = await getPinnedRepos();
+
+  return {
+    props: {
+      pinnedRepos,
+    },
+    revalidate: 86400,
+  };
+};
