@@ -1,5 +1,5 @@
 import { NavItem } from "./NavItem";
-import { NavLinks } from "../../lib/navLinks";
+import { navLinks } from "../../lib/navLinks";
 import dynamic from "next/dynamic";
 const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
 
@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="fixed hidden h-full px-6 pt-6 lg:block">
       <div className="flex h-full flex-col items-center justify-start gap-4">
-        {NavLinks.map((item, index) => {
+        {navLinks.map((item, index) => {
           return (
             <NavItem
               key={index}

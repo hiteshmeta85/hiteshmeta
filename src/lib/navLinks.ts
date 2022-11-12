@@ -16,7 +16,7 @@ export type NavItem = {
 
 export type NavLinks = NavItem[];
 
-export const NavLinks: NavLinks = [
+export const navLinks: NavLinks = [
   {
     name: "Home",
     slug: "/",

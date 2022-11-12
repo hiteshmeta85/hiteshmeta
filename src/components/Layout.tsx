@@ -12,7 +12,7 @@ const Layout = ({ children }: { children: ReactElement }) => {
       <Head>
         <title>hiteshmeta</title>
       </Head>
-      <div>
+      <div className="bg-white dark:bg-[#18181b]">
         <Nav />
         <Mail />
         <MobileNav />
