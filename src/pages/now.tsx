@@ -9,17 +9,15 @@ const About = ({
 }: InferGetServerSidePropsType<typeof getStaticProps>) => {
   return (
     <Layout>
-      <div className="flex flex-row gap-4 lg:gap-16">
-        <div className="leading-none">
-          <h2 className="heading mb-2">Now</h2>
-          <p className="h5 mb-4">
-            The answer to &quot;What are you upto these days?&quot;
-          </p>
-          <div
-            className="prose-style"
-            dangerouslySetInnerHTML={{ __html: md().render(content) }}
-          />
-        </div>
+      <div className="leading-none">
+        <h2 className="heading mb-2">Now</h2>
+        <p className="h5 mb-4">
+          The answer to &quot;What are you upto these days?&quot;
+        </p>
+        <div
+          className="prose-style"
+          dangerouslySetInnerHTML={{ __html: md().render(content) }}
+        />
       </div>
     </Layout>
   );
