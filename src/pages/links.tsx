@@ -1,8 +1,8 @@
 import React from "react";
 import { NextPage } from "next";
 import Layout from "../components/Layout";
-import { links } from "../components/Links/Links";
-import LinkCard from "../components/Links/LinkCard";
+import { socialLinks } from "../lib/socialLinks";
+import LinkCard from "../components/LinkCard";
 
 const Links: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Links: NextPage = () => {
         </div>
         <div className="container-gradient mt-6 flex justify-between gap-2 rounded-lg px-4 py-4 shadow-xl">
           <div className="flex w-full flex-col gap-2">
-            {links.map((link, index) => (
+            {socialLinks.map((link, index) => (
               <LinkCard
                 key={index}
                 icon={link.icon}

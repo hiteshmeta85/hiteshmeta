@@ -14,9 +14,9 @@ export type NavItem = {
   icon: IconType;
 };
 
-export type NavItems = NavItem[];
+export type NavLinks = NavItem[];
 
-export const NavbarItems: NavItems = [
+export const navLinks: NavLinks = [
   {
     name: "Home",
     slug: "/",

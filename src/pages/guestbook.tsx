@@ -4,10 +4,10 @@ import { trpc } from "../utils/trpc";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { RiGoogleFill, RiSendPlaneFill } from "react-icons/ri";
 import { GoSignOut } from "react-icons/go";
-import CustomButton from "../components/Button/CustomButton";
+import CustomButton from "../components/CustomButton";
 import { z } from "zod";
 import { toast } from "react-hot-toast";
-import MessageCard from "../components/Cards/MessageCard";
+import MessageCard from "../components/MessageCard";
 import { NextPage } from "next";
 
 const inputSchema = z.object({

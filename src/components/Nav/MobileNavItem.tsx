@@ -1,15 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { IconType } from "react-icons";
+import { NavItem } from "../../lib/navLinks";
 
-interface props {
-  slug: string;
-  icon: IconType;
-}
-
-const MobileNavItem = (props: props) => {
+const MobileNavItem = ({ slug, icon, name }: NavItem) => {
   const router = useRouter();
-  const { slug, icon } = props;
 
   return (
     <button
