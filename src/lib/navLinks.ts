@@ -1,4 +1,5 @@
 import {
+  FiBook,
   FiBookOpen,
   FiClock,
   FiHeadphones,
@@ -36,6 +37,11 @@ export const navLinks: NavLinks = [
     name: "Links",
     slug: "/links",
     icon: FiPaperclip,
+  },
+  {
+    name: "Blogs",
+    slug: "/blogs",
+    icon: FiBook,
   },
   {
     name: "Guestbook",
