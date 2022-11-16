@@ -9,7 +9,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="container-gradient flex cursor-pointer items-center gap-2 rounded-lg p-4 shadow-lg duration-300 hover:scale-105 hover:shadow-xl"
+            className="container-gradient flex cursor-pointer items-center gap-3 rounded-lg p-4 shadow-lg duration-300 hover:scale-105 hover:shadow-xl"
           >
             {React.createElement(skill.icon, {
               className: "text-zinc-600 h-6 w-6 dark:text-zinc-300",
