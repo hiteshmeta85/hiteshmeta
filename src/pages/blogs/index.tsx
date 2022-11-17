@@ -18,7 +18,7 @@ const Blogs = ({
       <>
         <div className="leading-none">
           <h2 className="heading mb-2">Blogs</h2>
-          <p className="h5 mb-4">by #hiteshmeta</p>
+          <p className="h6 mb-4">by @hiteshmeta</p>
         </div>
         <div className="my-6" />
         <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
@@ -28,7 +28,7 @@ const Blogs = ({
                 <div className="container-gradient flex h-full cursor-pointer flex-col justify-between gap-4 rounded-lg p-4 duration-300 hover:scale-105">
                   <p className="heading text-xl">{blog.title}</p>
                   <p className="text">{blog.description}</p>
-                  <p className="h6">{blog.date}</p>
+                  <p className="text">{blog.date}</p>
                 </div>
               </a>
             );

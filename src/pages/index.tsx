@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Image from "next/future/image";
-import Avatar from "../assets/avatar.jpeg";
+import Avatar from "../../public/avatar.jpeg";
 import PinnedRepos from "../components/PinnedRepos";
 import { Repo } from "../lib/types";
 import { GetStaticProps } from "next";

@@ -10,26 +10,56 @@ body {
   .container {
     @apply mx-auto max-w-screen-md px-4 pt-8 pb-4 md:px-12 lg:px-24;
   }
-  .heading {
+  .heading,
+  .h1 {
     @apply text-[2.5rem] font-extrabold text-zinc-900 dark:text-zinc-200;
   }
+  .h2 {
+    @apply text-[2rem] font-bold text-zinc-900 dark:text-zinc-200;
+  }
+  .h3 {
+    @apply text-[1.5rem] font-bold text-zinc-800 dark:text-zinc-200;
+  }
   .h4 {
-    @apply text-zinc-900 dark:text-zinc-200;
+    @apply text-[1.25rem] text-zinc-800 dark:text-zinc-200;
   }
   .h5 {
-    @apply text-zinc-800 dark:text-zinc-300;
+    @apply text-[1rem] text-zinc-700 dark:text-zinc-300;
   }
   .h6 {
-    @apply text-xs text-zinc-600 dark:text-zinc-400;
+    @apply text-[0.875rem] text-zinc-600 dark:text-zinc-400;
   }
   .text {
     @apply text-sm text-zinc-700 dark:text-zinc-400;
   }
   .link {
-    @apply cursor-pointer text-zinc-500 duration-300 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-400;
+    @apply cursor-pointer text-zinc-800 underline-offset-2 duration-300 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-300;
+  }
+  .strong {
+    @apply font-bold text-zinc-800 dark:text-zinc-300;
+  }
+  .pre {
+    @apply bg-zinc-200 text-sm text-zinc-900 dark:bg-zinc-800 dark:text-zinc-300;
+  }
+  .hr {
+    @apply border-zinc-200 dark:border-zinc-700;
   }
   .prose-style {
-    @apply prose-p:text prose-a:link prose-h6:h6 prose text-sm leading-5 underline-offset-4;
+    @apply prose-h1:h1
+    prose-h2:h2
+    prose-h3:h3
+    prose-h4:h4
+    prose-h5:h5
+    prose-h6:h6
+    prose-p:text
+    prose-a:link
+    prose-strong:strong
+    prose-pre:pre
+    prose-hr:hr
+    prose
+    max-w-none
+    text-sm
+    prose-headings:my-4;
   }
   .container-gradient {
     @apply bg-gradient-to-r from-neutral-200 to-zinc-200 dark:from-neutral-800 dark:to-zinc-800;

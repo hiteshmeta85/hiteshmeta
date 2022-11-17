@@ -12,12 +12,10 @@ const Blog = ({
 }: InferGetServerSidePropsType<typeof getStaticProps>) => {
   return (
     <Layout>
-      <div className="leading-none">
-        <div
-          className="prose-style"
-          dangerouslySetInnerHTML={{ __html: md().render(content) }}
-        />
-      </div>
+      <div
+        className="prose-style"
+        dangerouslySetInnerHTML={{ __html: md().render(content) }}
+      />
     </Layout>
   );
 };
