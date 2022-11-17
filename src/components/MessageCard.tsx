@@ -12,7 +12,7 @@ const CommentCard = (props: MessageCard) => {
   return (
     <div className="p-4 leading-7">
       <p className="h5">{message}</p>
-      <p className="h6 text-sm">
+      <p className="text">
         by <span className="capitalize">{name}</span>{" "}
         <span className="px-2">·</span> on <span>{date}</span>
       </p>

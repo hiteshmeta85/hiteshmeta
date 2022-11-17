@@ -28,7 +28,7 @@ const Blogs = ({
                 <div className="container-gradient flex h-full cursor-pointer flex-col justify-between gap-4 rounded-lg p-4 duration-300 hover:scale-105">
                   <p className="heading text-xl">{blog.title}</p>
                   <p className="text">{blog.description}</p>
-                  <p className="h6">{blog.date}</p>
+                  <p className="text">{blog.date}</p>
                 </div>
               </a>
             );
