@@ -8,7 +8,7 @@ body {
 
 @layer components {
   .container {
-    @apply mx-auto max-w-screen-md px-4 pt-8 pb-4 md:px-12 lg:px-24;
+    @apply mx-auto max-w-[875px] px-4 pt-8 pb-4 md:px-12 lg:px-24;
   }
   .heading,
   .h1 {
@@ -75,6 +75,9 @@ body {
   }
   .icon {
     @apply text-zinc-100 dark:text-zinc-300;
+  }
+  .border-gradient {
+    @apply border-zinc-600 shadow-zinc-300 dark:border-zinc-400 dark:shadow-zinc-800;
   }
 }
 

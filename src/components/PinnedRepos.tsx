@@ -14,11 +14,11 @@ const PinnedRepos = (props: { pinnedRepos: PinnedRepos }) => {
             href={`${repo.link}`}
             target="_blank"
             rel="noreferrer"
-            className="gap-4 rounded-lg shadow-lg duration-300 hover:scale-[103%] hover:shadow-xl"
+            className="border-gradient rounded-lg border-4 shadow-lg duration-300 hover:scale-[103%] hover:shadow-xl"
           >
             <div className="container-gradient flex h-full cursor-pointer flex-col justify-between rounded-lg p-4">
               <div>
-                <h3 className="h4 mb-6 w-full text-lg font-bold leading-none tracking-tight">
+                <h3 className="heading mb-6 w-full text-xl font-bold leading-none tracking-tight">
                   {repo.repo}
                 </h3>
                 <p className="text mb-6 w-full tracking-tight">

@@ -21,14 +21,14 @@ const Blogs = ({
           <p className="h6 mb-4">by @hiteshmeta</p>
         </div>
         <div className="my-6" />
-        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {allBlogsData.map((blog, index) => {
             return (
               <a key={index} href={`/blogs/${blog.id}`}>
-                <div className="container-gradient flex h-full cursor-pointer flex-col justify-between gap-4 rounded-lg p-4 duration-300 hover:scale-105">
+                <div className="container-gradient border-gradient flex h-full cursor-pointer flex-col justify-between gap-4 rounded-xl  border-4 p-4 shadow-lg duration-300 hover:scale-105">
                   <p className="heading text-xl">{blog.title}</p>
                   <p className="text">{blog.description}</p>
-                  <p className="text">{blog.date}</p>
+                  <p className="text mt-4">{blog.date}</p>
                 </div>
               </a>
             );
