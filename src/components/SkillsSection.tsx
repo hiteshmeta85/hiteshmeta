@@ -1,10 +1,12 @@
+import { Category, Skills as ISkills } from "../lib/skills";
 import React from "react";
-import { skills } from "../lib/skills";
 
-const Skills = () => {
+const SkillsSection = (props: { skills: ISkills; category: Category }) => {
+  const { skills, category } = props;
+
   return (
-    <div className="mt-10">
-      <h2 className="heading mb-2">Skills</h2>
+    <div className="my-8">
+      <p className="mb-2">{category}</p>
       <div className="grid w-full grid-cols-1 grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
         {skills.map((skill, index) => (
           <div
@@ -24,4 +26,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSection;

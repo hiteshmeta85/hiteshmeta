@@ -2,9 +2,9 @@ import {
   FiBook,
   FiBookOpen,
   FiClock,
-  FiHeadphones,
   FiHome,
   FiPaperclip,
+  FiTerminal,
   FiUser,
 } from "react-icons/fi";
 import { IconType } from "react-icons";
@@ -22,6 +22,11 @@ export const navLinks: NavLinks = [
     name: "Home",
     slug: "/",
     icon: FiHome,
+  },
+  {
+    name: "Skills",
+    slug: "/skills",
+    icon: FiTerminal,
   },
   {
     name: "About",
@@ -48,9 +53,9 @@ export const navLinks: NavLinks = [
     slug: "/guestbook",
     icon: FiBookOpen,
   },
-  {
-    name: "Spotify",
-    slug: "/spotify",
-    icon: FiHeadphones,
-  },
+  // {
+  //   name: "Spotify",
+  //   slug: "/spotify",
+  //   icon: FiHeadphones,
+  // },
 ];

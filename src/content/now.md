@@ -2,8 +2,6 @@
 title: "Now"
 ---
 
-Currently, I'm learning t3-stack (typescript, trpc, tailwind) along with next.js, prisma and next-auth.
+Just completed my winter internship wherein I got a chance to explore NextJs, Typescript, Cypress, Storybook and AdonisJs.
 
-I'm also working on a side project which would hopefully be completely by end of this year.
-
-###### Last Updated 24-Oct-2022
+###### Last Updated 25-Dec-2022
