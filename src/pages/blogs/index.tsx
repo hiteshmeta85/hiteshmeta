@@ -26,8 +26,10 @@ const Blogs = ({
             return (
               <a key={index} href={`/blogs/${blog.id}`}>
                 <div className="container-gradient border-gradient flex h-full cursor-pointer flex-col justify-between gap-4 rounded-xl  border-4 p-4 shadow-lg duration-300 hover:scale-105">
-                  <p className="heading text-xl">{blog.title}</p>
-                  <p className="text">{blog.description}</p>
+                  <div className="flex flex-col gap-4">
+                    <p className="heading text-xl">{blog.title}</p>
+                    <p className="text">{blog.description}</p>
+                  </div>
                   <p className="text mt-4">{blog.date}</p>
                 </div>
               </a>
