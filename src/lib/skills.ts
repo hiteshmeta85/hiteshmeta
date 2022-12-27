@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 import {
   SiAdonisjs,
+  SiApollographql,
   SiChakraui,
   SiCypress,
   SiExpress,
@@ -120,5 +121,10 @@ export const skills: Skills = [
     name: "GitHub",
     icon: SiGithub,
     category: Category.Tools,
+  },
+  {
+    name: "Apollo Client",
+    icon: SiApollographql,
+    category: Category.Frontend,
   },
 ];

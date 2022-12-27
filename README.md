@@ -1,7 +1,21 @@
-<h1 align="center" style="line-height: 0">Personal Portfolio</h1>
-<h6 align="center"><a href="https://hiteshmeta.vercel.app">Website</a></h6>
+# Personal Portfolio
 
-## 🛠 Technologies used
+#### [Website](https://hiteshmeta.vercel.app)
+
+## Getting Started
+
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+3. Setup your .env file
+4. Run `npm run dev` to start the development server
+5. Run `npm run build` to build the project
+6. Run `npm run start` to start the production server
+
+## Node Version
+
+> v16.15.1
+
+## Technologies Used & Links
 
 - [Next-Auth.js](https://next-auth.js.org/)
 - [Prisma](https://prisma.io/)
@@ -10,25 +24,6 @@
 - [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 
-## 👨🏻‍💻 Getting Started
+---
 
-> Node -v
-> 16.15.1
-
-First, install the required packages:
-
-```
-npm install
-```
-
-Then, configure the .env file:
-
-```
-Check the .env.example file
-```
-
-Then, run the development server:
-
-```
-npm run dev
-```
+![](public/images/sample/homepage.png)
