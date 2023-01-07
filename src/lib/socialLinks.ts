@@ -4,6 +4,7 @@ import {
   SiLinkedin,
   SiSpotify,
   SiTwitter,
+  SiUnsplash,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -30,9 +31,21 @@ export const socialLinks: SocialLinks = [
     icon: SiGithub,
   },
   {
+    name: "Unsplash",
+    url: "https://unsplash.com/@hiteshmeta",
+    value: "@hiteshmeta",
+    icon: SiUnsplash,
+  },
+  {
     name: "Instagram",
     url: "https://www.instagram.com/meta.hitesh85/",
     value: "@meta.hitesh85",
+    icon: SiInstagram,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/h85._._/",
+    value: "@h85._._",
     icon: SiInstagram,
   },
   {
