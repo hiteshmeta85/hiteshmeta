@@ -6,7 +6,7 @@ import { VscRepoForked } from "react-icons/vsc";
 const PinnedRepos = (props: { pinnedRepos: PinnedRepos }) => {
   return (
     <div className="mt-10">
-      <h2 className="heading mb-2">Projects</h2>
+      <h2 className="h2 md:heading mb-2">Projects</h2>
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {props.pinnedRepos.map((repo, index) => (
           <a

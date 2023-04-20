@@ -10,12 +10,7 @@ const MobileNav = () => {
       <div className="no-scrollbar-visible flex h-full gap-4 overflow-x-scroll">
         {navLinks.map((item, index) => {
           return (
-            <MobileNavItem
-              key={index}
-              name={item.name}
-              slug={item.slug}
-              icon={item.icon}
-            />
+            <MobileNavItem key={index} slug={item.slug} icon={item.icon} />
           );
         })}
         <ThemeButton />

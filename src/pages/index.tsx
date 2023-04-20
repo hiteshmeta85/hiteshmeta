@@ -5,6 +5,8 @@ import PinnedRepos from "../components/PinnedRepos";
 import { Repo } from "../lib/types";
 import { GetStaticProps } from "next";
 import { getPinnedRepos } from "../lib/getPinnedRepos";
+import FeaturedSection from "../components/FeaturedSection";
+import { featuredProjects } from "../lib/featuredProject";
 
 const Home = (props: { pinnedRepos: Repo[] }) => {
   return (
@@ -30,6 +32,7 @@ const Home = (props: { pinnedRepos: Repo[] }) => {
           </div>
         </div>
         <PinnedRepos pinnedRepos={props.pinnedRepos} />
+        <FeaturedSection featuredProjects={featuredProjects} />
       </div>
     </Layout>
   );

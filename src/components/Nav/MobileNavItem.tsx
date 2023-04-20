@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { NavItem } from "../../lib/navLinks";
 
-const MobileNavItem = ({ slug, icon, name }: NavItem) => {
+const MobileNavItem = ({ slug, icon }: Omit<NavItem, "name">) => {
   const router = useRouter();
 
   return (
