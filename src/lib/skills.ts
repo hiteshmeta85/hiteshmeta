@@ -17,6 +17,15 @@ import {
   SiStrapi,
   SiTailwindcss,
   SiTypescript,
+  SiReacthookform,
+  SiCplusplus,
+  SiVercel,
+  SiSupabase,
+  SiDirectus,
+  SiFigma,
+  SiPostman,
+  SiWebstorm,
+  SiTrpc,
 } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -126,5 +135,50 @@ export const skills: Skills = [
     name: "Apollo Client",
     icon: SiApollographql,
     category: Category.Frontend,
+  },
+  {
+    name: "React Hook Form",
+    icon: SiReacthookform,
+    category: Category.Frontend,
+  },
+  {
+    name: "C++",
+    icon: SiCplusplus,
+    category: Category.Languages,
+  },
+  {
+    name: "Vercel",
+    icon: SiVercel,
+    category: Category.Tools,
+  },
+  {
+    name: "Supabase",
+    icon: SiSupabase,
+    category: Category.Backend,
+  },
+  {
+    name: "Directus",
+    icon: SiDirectus,
+    category: Category.Backend,
+  },
+  {
+    name: "Figma",
+    icon: SiFigma,
+    category: Category.Tools,
+  },
+  {
+    name: "Postman",
+    icon: SiPostman,
+    category: Category.Tools,
+  },
+  {
+    name: "Webstorm",
+    icon: SiWebstorm,
+    category: Category.Tools,
+  },
+  {
+    name: "Trpc",
+    icon: SiTrpc,
+    category: Category.Backend,
   },
 ];

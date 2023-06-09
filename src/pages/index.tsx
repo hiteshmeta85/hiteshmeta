@@ -14,11 +14,11 @@ const Home = (props: { pinnedRepos: Repo[] }) => {
       <div>
         <div className="flex flex-col-reverse justify-center gap-4 lg:flex-row lg:gap-16">
           <div className="leading-none">
-            <h2 className="heading mb-2">Hitesh</h2>
+            <h2 className="heading mb-2">Hitesh Meta</h2>
             <p className="h5 mb-4">Full Stack Web Developer</p>
             <p className="text">
               I build web apps! I&apos;m a Full-Stack Web Developer and a
-              Third-year Computer Science Student, pursuing my degree from
+              final-year Computer Science Student, pursuing my degree from
               Pillai College of Engineering (Mumbai University), currently
               living in Mumbai, India.
             </p>
