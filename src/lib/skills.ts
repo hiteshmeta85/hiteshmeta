@@ -116,11 +116,11 @@ export const skills: Skills = [
     icon: SiPrisma,
     category: Category.Backend,
   },
-  {
-    name: "Strapi",
-    icon: SiStrapi,
-    category: Category.Backend,
-  },
+  // {
+  //   name: "Strapi",
+  //   icon: SiStrapi,
+  //   category: Category.Backend,
+  // },
   {
     name: "Git",
     icon: SiGit,
@@ -156,11 +156,11 @@ export const skills: Skills = [
     icon: SiSupabase,
     category: Category.Backend,
   },
-  {
-    name: "Directus",
-    icon: SiDirectus,
-    category: Category.Backend,
-  },
+  // {
+  //   name: "Directus",
+  //   icon: SiDirectus,
+  //   category: Category.Backend,
+  // },
   {
     name: "Figma",
     icon: SiFigma,
