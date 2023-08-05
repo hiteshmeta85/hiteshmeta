@@ -3,29 +3,31 @@ import {
   SiAdonisjs,
   SiApollographql,
   SiChakraui,
+  SiCplusplus,
+  SiCss3,
   SiCypress,
   SiExpress,
+  SiFigma,
   SiGit,
   SiGithub,
+  SiHtml5,
   SiJavascript,
   SiNextdotjs,
   SiPostgresql,
+  SiPostman,
   SiPrisma,
   SiPython,
   SiReact,
+  SiReacthookform,
+  SiReactquery,
   SiStorybook,
   SiStrapi,
-  SiTailwindcss,
-  SiTypescript,
-  SiReacthookform,
-  SiCplusplus,
-  SiVercel,
   SiSupabase,
-  SiDirectus,
-  SiFigma,
-  SiPostman,
-  SiWebstorm,
+  SiTailwindcss,
   SiTrpc,
+  SiTypescript,
+  SiVercel,
+  SiWebstorm,
 } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -47,6 +49,21 @@ export type Skills = Skill[];
 
 export const skills: Skills = [
   {
+    name: "HTML",
+    icon: SiHtml5,
+    category: Category.Frontend,
+  },
+  {
+    name: "CSS",
+    icon: SiCss3,
+    category: Category.Frontend,
+  },
+  {
+    name: "Javascript",
+    icon: SiJavascript,
+    category: Category.Frontend,
+  },
+  {
     name: "Next.js",
     icon: SiNextdotjs,
     category: Category.Frontend,
@@ -67,7 +84,7 @@ export const skills: Skills = [
     category: Category.Languages,
   },
   {
-    name: "Tailwind",
+    name: "Tailwind CSS",
     icon: SiTailwindcss,
     category: Category.Frontend,
   },
@@ -116,11 +133,11 @@ export const skills: Skills = [
     icon: SiPrisma,
     category: Category.Backend,
   },
-  // {
-  //   name: "Strapi",
-  //   icon: SiStrapi,
-  //   category: Category.Backend,
-  // },
+  {
+    name: "Strapi",
+    icon: SiStrapi,
+    category: Category.Backend,
+  },
   {
     name: "Git",
     icon: SiGit,
@@ -156,11 +173,6 @@ export const skills: Skills = [
     icon: SiSupabase,
     category: Category.Backend,
   },
-  // {
-  //   name: "Directus",
-  //   icon: SiDirectus,
-  //   category: Category.Backend,
-  // },
   {
     name: "Figma",
     icon: SiFigma,
@@ -180,5 +192,10 @@ export const skills: Skills = [
     name: "Trpc",
     icon: SiTrpc,
     category: Category.Backend,
+  },
+  {
+    name: "React Query",
+    icon: SiReactquery,
+    category: Category.Frontend,
   },
 ];
