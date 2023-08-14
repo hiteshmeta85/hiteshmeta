@@ -7,7 +7,7 @@ const SkillsSection = (props: { skills: ISkills; category: Category }) => {
   return (
     <div className="my-8">
       <p className="mb-2">{category}</p>
-      <div className="grid w-full grid-cols-1 grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
+      <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}

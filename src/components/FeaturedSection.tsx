@@ -19,7 +19,7 @@ const FeaturedSection = ({
             className="border-gradient rounded-lg border-4 shadow-lg duration-300 hover:scale-[103%] hover:shadow-xl"
           >
             <div className="container-gradient flex h-full cursor-pointer flex-col rounded-lg p-4">
-              <h3 className="h1 mb-6 min-h-[60px] w-full text-lg font-bold tracking-tight">
+              <h3 className="h1 min-h-[60px] w-full text-lg font-bold tracking-tight">
                 {project.title}
               </h3>
               <p className="text w-full tracking-tight">

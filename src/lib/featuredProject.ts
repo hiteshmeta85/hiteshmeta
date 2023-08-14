@@ -20,16 +20,22 @@ export const featuredProjects: FeaturedProjects = [
     link: "https://gpod-ai.vercel.app/",
   },
   {
+    title: "BOG BEACON",
+    description:
+      "Convert Content into Summarized Textbooks. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel",
+    link: "https://the-textbook-project-web.vercel.app/",
+  },
+  {
+    title: "Neuz Org Saas Platform",
+    description:
+      "Saas for Neuz Org built using Next.js, TailwindCSS, React-Hook-Form, and Express.js",
+    link: "https://admin.neuz.org/",
+  },
+  {
     title: "Neuz Org Website",
     description:
       "Landing page for Neuz Org built using Next.js, TailwindCSS, and Directus CMS.",
     link: "https://neuz.org/",
-  },
-  {
-    title: "WhileOne Corporate Website",
-    description:
-      "Landing page for WhileOne Company built using Next.js, TailwindCSS, Typescript, Formik, Yup and Nodemailer.",
-    link: "https://www.whileone.in/",
   },
   {
     title: "Relynk Website",
