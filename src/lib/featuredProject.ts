@@ -1,7 +1,7 @@
 export type FeaturedProject = {
   title: string;
   description: string;
-  link: string;
+  link?: string;
 };
 
 export type FeaturedProjects = FeaturedProject[];
@@ -29,18 +29,15 @@ export const featuredProjects: FeaturedProjects = [
     title: "Neuz Org Saas Platform",
     description:
       "Saas for Neuz Org built using Next.js, TailwindCSS, React-Hook-Form, and Express.js",
-    link: "https://admin.neuz.org/",
   },
   {
     title: "Neuz Org Website",
     description:
       "Landing page for Neuz Org built using Next.js, TailwindCSS, and Directus CMS.",
-    link: "https://neuz.org/",
   },
   {
     title: "Relynk Website",
     description:
       "Relynk Website built using Next.js, TailwindCSS, React-Hook-Form and Directus CMS.",
-    link: "https://relynk.io/",
   },
 ];
