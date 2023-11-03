@@ -54,10 +54,4 @@ export const socialLinks: SocialLinks = [
     value: "@MetaHitesh85",
     icon: SiTwitter,
   },
-  {
-    name: "Spotify",
-    url: "https://open.spotify.com/user/31v5nmble3tcr3xs4ms2ib4zuw7e",
-    value: "@Hitesh85",
-    icon: SiSpotify,
-  },
 ];

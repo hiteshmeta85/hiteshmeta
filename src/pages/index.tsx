@@ -1,14 +1,10 @@
 import Layout from "../components/Layout";
 import Image from "next/future/image";
 import Avatar from "../../public/avatar.jpeg";
-import PinnedRepos from "../components/PinnedRepos";
-import { Repo } from "../lib/types";
-import { GetStaticProps } from "next";
-import { getPinnedRepos } from "../lib/getPinnedRepos";
 import FeaturedSection from "../components/FeaturedSection";
 import { featuredProjects } from "../lib/featuredProject";
 
-const Home = (props: { pinnedRepos: Repo[] }) => {
+const Home = () => {
   return (
     <Layout>
       <div>
@@ -31,7 +27,6 @@ const Home = (props: { pinnedRepos: Repo[] }) => {
             />
           </div>
         </div>
-        <PinnedRepos pinnedRepos={props.pinnedRepos} />
         <FeaturedSection featuredProjects={featuredProjects} />
       </div>
     </Layout>
@@ -39,14 +34,3 @@ const Home = (props: { pinnedRepos: Repo[] }) => {
 };
 
 export default Home;
-
-export const getStaticProps: GetStaticProps = async () => {
-  const pinnedRepos = await getPinnedRepos();
-
-  return {
-    props: {
-      pinnedRepos,
-    },
-    revalidate: 86400,
-  };
-};

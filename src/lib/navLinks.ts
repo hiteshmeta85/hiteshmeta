@@ -1,7 +1,6 @@
 import {
   FiBook,
   FiBookOpen,
-  FiClock,
   FiHome,
   FiPaperclip,
   FiTerminal,
@@ -34,11 +33,6 @@ export const navLinks: NavLinks = [
     icon: FiUser,
   },
   {
-    name: "Now",
-    slug: "/now",
-    icon: FiClock,
-  },
-  {
     name: "Links",
     slug: "/links",
     icon: FiPaperclip,
@@ -53,9 +47,4 @@ export const navLinks: NavLinks = [
     slug: "/guestbook",
     icon: FiBookOpen,
   },
-  // {
-  //   name: "Spotify",
-  //   slug: "/spotify",
-  //   icon: FiHeadphones,
-  // },
 ];
