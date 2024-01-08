@@ -20,6 +20,19 @@ export const featuredProjects: FeaturedProjects = [
     link: "https://gpod-ai.vercel.app/",
   },
   {
+    title: "Visual X",
+    description:
+      "Web Application for Press Information Bureau (Govt. of India) that facilitates conversion of Text to Video for Press Releases.",
+    link: "https://visualx-ai.vercel.app/",
+  },
+
+  {
+    title: "NDRF Relief Portal",
+    description:
+      "Web Portal for NDRF team to help identify disaster related posts and tweets, present vital information and trace geolocation.",
+    link: "https://homebrew-web.vercel.app/",
+  },
+  {
     title: "BOG BEACON",
     description:
       "Generate Textbooks using AI. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel",
@@ -36,10 +49,5 @@ export const featuredProjects: FeaturedProjects = [
     description:
       "Landing page for Neuz Org built using Next.js, TailwindCSS, and Directus CMS.",
     link: "https://neuzorg.com/",
-  },
-  {
-    title: "Relynk Website",
-    description:
-      "Relynk Website built using Next.js, TailwindCSS, React-Hook-Form and Directus CMS.",
   },
 ];

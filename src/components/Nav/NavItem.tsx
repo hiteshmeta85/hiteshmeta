@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { NavItem as NavItemType } from "../../lib/navLinks";
 
-export const NavItem = ({ slug, name, icon }: NavItemType) => {
+export const NavItem = ({
+  slug,
+  name,
+  icon,
+}: Omit<NavItemType, "slug"> & { slug?: string }) => {
   const router = useRouter();
   const [isMouseOver, setIsMouseOver] = useState(false);
 
   return (
     <button
-      onClick={() => router.push(slug)}
+      {...(slug && {
+        onClick: () => router.push(slug),
+      })}
       onMouseOver={() => {
         setIsMouseOver(true);
       }}

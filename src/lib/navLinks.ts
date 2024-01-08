@@ -1,11 +1,4 @@
-import {
-  FiBook,
-  FiBookOpen,
-  FiHome,
-  FiPaperclip,
-  FiTerminal,
-  FiUser,
-} from "react-icons/fi";
+import { FiHome, FiPaperclip, FiTerminal, FiUser } from "react-icons/fi";
 import { IconType } from "react-icons";
 
 export type NavItem = {
@@ -23,28 +16,23 @@ export const navLinks: NavLinks = [
     icon: FiHome,
   },
   {
-    name: "Skills",
-    slug: "/skills",
-    icon: FiTerminal,
-  },
-  {
     name: "About",
     slug: "/about",
     icon: FiUser,
+  },
+  {
+    name: "Skills",
+    slug: "/skills",
+    icon: FiTerminal,
   },
   {
     name: "Links",
     slug: "/links",
     icon: FiPaperclip,
   },
-  {
-    name: "Blogs",
-    slug: "/blogs",
-    icon: FiBook,
-  },
-  {
-    name: "Guestbook",
-    slug: "/guestbook",
-    icon: FiBookOpen,
-  },
+  // {
+  //   name: "Blogs",
+  //   slug: "/blogs",
+  //   icon: FiBook,
+  // },
 ];

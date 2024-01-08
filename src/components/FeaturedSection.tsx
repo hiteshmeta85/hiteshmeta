@@ -11,10 +11,8 @@ const ProjectCard = ({
   return (
     <div className="border-gradient h-full rounded-lg border-4 shadow-lg">
       <div className="container-gradient flex h-full flex-col rounded-lg p-4">
-        <h3 className="h1 min-h-[60px] w-full text-lg font-bold tracking-tight">
-          {title}
-        </h3>
-        <p className="text w-full tracking-tight">{description}</p>
+        <h3 className="h1 w-full text-lg font-bold tracking-tight">{title}</h3>
+        <p className="text mt-2 w-full tracking-tight">{description}</p>
       </div>
     </div>
   );
@@ -28,7 +26,7 @@ const FeaturedSection = ({
   return (
     <div className="mt-10">
       <h2 className="h2 md:heading mb-2">Featured Projects</h2>
-      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
         {featuredProjects.map((project, index) => {
           if (project.link === undefined) {
             return (
@@ -45,7 +43,7 @@ const FeaturedSection = ({
               href={`${project.link}`}
               target="_blank"
               rel="noreferrer"
-              className="h-full cursor-pointer duration-300 hover:scale-[103%] hover:shadow-xl"
+              className="h-full cursor-pointer duration-300 hover:scale-[101%] hover:shadow-xl"
             >
               <ProjectCard
                 title={project.title}

@@ -2,14 +2,40 @@
 title: "About Me"
 ---
 
-Hello! I'm hitesh. I'm a 21 y/o student pursuing my undergrad degree in computer science from pillai college of engineering, new panvel.
+Hello!
+I'm Hitesh,
+a Software Developer proficient in creating dynamic web applications and eager
+to contribute to innovative web solutions.
 
-I'm a self-taught programmer. I started programming during my 12th standard summer break. I started with web development and since then I like working on the web a lot (mostly frontend). If you want to know about what programming languages I know, they are - javascript, python, and a little bit of c. I'm currently learning typescript✌️.
+With over 3 years of experience, I have worked on frontend,
+backend, testing, CMS technologies, and AI-driven applications.
+The main highlight of my career includes my contribution to a 2+ years of an ongoing multilingual web application,
+a soon-to-be-released transport management platform, a local-publishers-focused SaaS platform,
+and a successful revamp of CSI-PCE's official website.
 
-My tech stack ranges from html, css, javascript, react.js, next.js, chakra-ui & tailwind css for the frontend, and express.js, adonis.js, typeORM, and postgreSQL for the backend. I have used cypress.io for automated e2e testing and storybook for UI testing.
+I'm also a final-year computer science student,
+pursuing my degree from Pillai College of Engineering
+(Mumbai University), currently living in Mumbai, India.
 
-I recently got an experience in t3-stack (typescript, trpc, tailwind) along with next.js, prisma and next-auth👨🏻‍💻.
+I have led a technical committee with over 70+ team members,
+organizing impactful technical events.
+As a featured speaker, I've engaged and enlightened over 1000 participants.
+Additionally, I actively participate in national-level hackathons.
 
-Things I do other than dev and programming?🤔 I do watch tons of movies and shows. SUITS is my favorite. I do like wildlife photography, but haven't done it for the past 2 years. Here's my [photography page](https://www.instagram.com/h85._._/). I also like listening to music.
+Core Skills:
 
-Apart from these, I'm also an active member of [CSI-PCE's](https://www.instagram.com/_csipce/) Technical Team.
+- Frontend: ReactJS, NextJS, TailwindCSS
+- Backend: NodeJS, ExpressJS, AdonisJS, tRPC, Strapi.io
+- Languages: TypeScript, JavaScript
+- Databases: PostgreSQL
+- Testing: Cypress
+
+Things I do other than programming?
+I do like wildlife photography.
+Here's my [photography](https://www.instagram.com/h85._._/) page.
+And I do watch tons of movies and shows.
+SUITS is my favorite.
+
+Currently working as a freelance web developer, I offer end-to-end web solutions.
+Feel free to reach out to me at [meta.hitesh85@gmail.com](mailto:meta.hitesh85@gmail.com).
+Or, you can connect with me on [LinkedIn](https://www.linkedin.com/in/hitesh-meta/).

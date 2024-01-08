@@ -3,6 +3,32 @@ import Image from "next/future/image";
 import Avatar from "../../public/avatar.jpeg";
 import FeaturedSection from "../components/FeaturedSection";
 import { featuredProjects } from "../lib/featuredProject";
+import React from "react";
+import {
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+
+const topSkills = [
+  {
+    name: "React",
+    icon: SiReact,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+  },
+];
 
 const Home = () => {
   return (
@@ -13,17 +39,24 @@ const Home = () => {
             <h2 className="heading mb-2">Hitesh Meta</h2>
             <p className="h5 mb-4">Full Stack Web Developer</p>
             <p className="text">
-              I build web apps! I&apos;m a Full-Stack Web Developer and a
-              final-year Computer Science Student, pursuing my degree from
-              Pillai College of Engineering (Mumbai University), currently
-              living in Mumbai, India.
+              I build web apps! I&apos;m a Freelance Software Developer,
+              proficient in creating dynamic web applications.
             </p>
+            <div className="mt-4 flex items-center gap-3">
+              {topSkills.map((skill, index) =>
+                React.createElement(skill.icon, {
+                  key: index,
+                  className: "text-zinc-600 h-5 w-5 dark:text-zinc-300",
+                }),
+              )}
+            </div>
           </div>
           <div className="min-w-fit">
             <Image
               src={Avatar}
               alt="avatar"
-              className="h-32 w-32 rounded-full"
+              quality={100}
+              className="h-32 w-32 rounded-full object-cover"
             />
           </div>
         </div>
