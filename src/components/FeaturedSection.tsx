@@ -9,7 +9,7 @@ const ProjectCard = ({
   description: string;
 }) => {
   return (
-    <div className="border-gradient rounded-lg border-4 shadow-lg">
+    <div className="border-gradient h-full rounded-lg border-4 shadow-lg">
       <div className="container-gradient flex h-full flex-col rounded-lg p-4">
         <h3 className="h1 min-h-[60px] w-full text-lg font-bold tracking-tight">
           {title}
@@ -45,7 +45,7 @@ const FeaturedSection = ({
               href={`${project.link}`}
               target="_blank"
               rel="noreferrer"
-              className="cursor-pointer duration-300 hover:scale-[103%] hover:shadow-xl"
+              className="h-full cursor-pointer duration-300 hover:scale-[103%] hover:shadow-xl"
             >
               <ProjectCard
                 title={project.title}

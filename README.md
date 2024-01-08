@@ -6,10 +6,9 @@
 
 1. Clone the repository
 2. Run `npm install` to install the dependencies
-3. Setup your .env file
-4. Run `npm run dev` to start the development server
-5. Run `npm run build` to build the project
-6. Run `npm run start` to start the production server
+3. Run `npm run dev` to start the development server
+4. Run `npm run build` to build the project
+5. Run `npm run start` to start the production server
 
 ## Node Version
 
@@ -17,11 +16,8 @@
 
 ## Technologies Used & Links
 
-- [Next-Auth.js](https://next-auth.js.org/)
-- [Prisma](https://prisma.io/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [tRPC](https://trpc.io/)
 - [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
 
 ---

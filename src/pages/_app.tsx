@@ -1,20 +1,14 @@
 import "../styles/globals.css";
-import { SessionProvider } from "next-auth/react";
-import type { Session } from "next-auth";
-import type { AppType } from "next/app";
-import { trpc } from "../utils/trpc";
 import "@fontsource/epilogue/800.css";
 import "@fontsource/epilogue/700.css";
 import "@fontsource/epilogue/400.css";
 import NextNProgress from "nextjs-progressbar";
 import { ThemeProvider } from "next-themes";
+import { AppProps } from "next/app";
 
-const MyApp: AppType<{ session: Session | null }> = ({
-  Component,
-  pageProps: { session, ...pageProps },
-}) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <SessionProvider session={session}>
+    <div>
       <NextNProgress
         color="#a1a1aa"
         height={3}
@@ -24,8 +18,8 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <ThemeProvider defaultTheme="dark" attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>
-    </SessionProvider>
+    </div>
   );
 };
 
-export default trpc.withTRPC(MyApp);
+export default MyApp;
