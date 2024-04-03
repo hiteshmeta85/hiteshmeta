@@ -39,7 +39,7 @@ const Home = () => {
             <h2 className="heading mb-2">Hitesh Meta</h2>
             <p className="h5 mb-4">Full Stack Web Developer</p>
             <p className="text">
-              I build web apps! I&apos;m a Freelance Software Developer,
+              I build web apps! I&apos;m a Software Developer,
               proficient in creating dynamic web applications.
             </p>
             <div className="mt-4 flex items-center gap-3">
