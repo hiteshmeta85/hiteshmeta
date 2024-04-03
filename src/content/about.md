@@ -36,6 +36,5 @@ Here's my [photography](https://www.instagram.com/h85._._/) page.
 And I do watch tons of movies and shows.
 SUITS is my favorite.
 
-Currently working as a freelance web developer, I offer end-to-end web solutions.
 Feel free to reach out to me at [meta.hitesh85@gmail.com](mailto:meta.hitesh85@gmail.com).
 Or, you can connect with me on [LinkedIn](https://www.linkedin.com/in/hitesh-meta/).
