@@ -29,7 +29,7 @@ export const featuredProjects: FeaturedProjects = [
     title: "BOG BEACON",
     description:
       "Generate Textbooks using AI. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel",
-    link: "https://the-textbook-project-web.vercel.app/",
+    link: "https://beaconai.fusioncyber.co/",
   },
   {
     title: "GPod AI",
