@@ -37,10 +37,10 @@ const Home = () => {
         <div className="flex flex-col-reverse justify-center gap-4 lg:flex-row lg:gap-16">
           <div className="leading-none">
             <h2 className="heading mb-2">Hitesh Meta</h2>
-            <p className="h5 mb-4">Full Stack Web Developer</p>
+            <p className="h5 mb-4">SDE @Turnover Global</p>
             <p className="text">
-              I build web apps! I&apos;m a Freelance Software Developer,
-              proficient in creating dynamic web applications.
+              I&apos;m a Software Engineer, proficient in creating dynamic web
+              applications.
             </p>
             <div className="mt-4 flex items-center gap-3">
               {topSkills.map((skill, index) =>

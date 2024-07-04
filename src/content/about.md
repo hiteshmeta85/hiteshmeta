@@ -4,11 +4,12 @@ title: "About Me"
 
 Hello!
 I'm Hitesh,
-a Software Developer proficient in creating dynamic web applications and eager
+a Software Engineer proficient in creating dynamic web applications and eager
 to contribute to innovative web solutions.
 
 With over 3 years of experience, I have worked on frontend,
 backend, testing, CMS technologies, and AI-driven applications.
+
 The main highlight of my career includes my contribution to a 2+ years of an ongoing multilingual web application,
 a soon-to-be-released transport management platform, a local-publishers-focused SaaS platform,
 and a successful revamp of CSI-PCE's official website.
