@@ -5,18 +5,19 @@ title: "About Me"
 Hello!
 I'm Hitesh,
 a Software Engineer proficient in creating dynamic web applications and eager
-to contribute to innovative web solutions.
+to contribute to innovative web solutions. Currently living in Bengaluru, India.
 
 With over 3 years of experience, I have worked on frontend,
 backend, testing, CMS technologies, and AI-driven applications.
+Currently,
+contributing to the development of a global B2B e-commerce marketplace at [Turnover Global Pvt](https://www.linkedin.com/company/turnoverglobal/).
 
 The main highlight of my career includes my contribution to a 2+ years of an ongoing multilingual web application,
-a soon-to-be-released transport management platform, a local-publishers-focused SaaS platform,
+a transport management platform (Commutec), an AI-based EdTech platform in cybersecurity space (Beacon AI),
 and a successful revamp of CSI-PCE's official website.
 
-I'm also a final-year computer science student,
-pursuing my degree from Pillai College of Engineering
-(Mumbai University), currently living in Mumbai, India.
+I am graduated from Pillai College of Engineering
+(Mumbai University) with a Bachelor's degree in Computer Engineering.
 
 I have led a technical committee with over 70+ team members,
 organizing impactful technical events.
@@ -28,8 +29,7 @@ Core Skills:
 - Frontend: ReactJS, NextJS, TailwindCSS
 - Backend: NodeJS, ExpressJS, AdonisJS, tRPC, Strapi.io
 - Languages: TypeScript, JavaScript
-- Databases: PostgreSQL
-- Testing: Cypress
+- Databases: PostgreSQL, MySQL
 
 Things I do other than programming?
 I do like wildlife photography.

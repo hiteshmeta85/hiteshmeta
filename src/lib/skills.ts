@@ -3,6 +3,7 @@ import {
   SiAdonisjs,
   SiApollographql,
   SiChakraui,
+  SiClickup,
   SiCplusplus,
   SiCss3,
   SiCypress,
@@ -12,22 +13,29 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
+  SiJira,
+  SiMysql,
   SiNextdotjs,
+  SiNodedotjs,
+  SiPlaywright,
   SiPostgresql,
   SiPostman,
   SiPrisma,
   SiPython,
+  SiRadixui,
   SiReact,
   SiReacthookform,
   SiReactquery,
   SiStorybook,
   SiStrapi,
+  SiStripe,
   SiSupabase,
   SiTailwindcss,
   SiTrpc,
   SiTypescript,
   SiVercel,
   SiWebstorm,
+  SiZod,
 } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -74,6 +82,11 @@ export const skills: Skills = [
     category: Category.Frontend,
   },
   {
+    name: "Node.js",
+    icon: SiNodedotjs,
+    category: Category.Backend,
+  },
+  {
     name: "Express.js",
     icon: SiExpress,
     category: Category.Backend,
@@ -86,6 +99,11 @@ export const skills: Skills = [
   {
     name: "Tailwind CSS",
     icon: SiTailwindcss,
+    category: Category.Frontend,
+  },
+  {
+    name: "Radix UI",
+    icon: SiRadixui,
     category: Category.Frontend,
   },
   {
@@ -109,12 +127,7 @@ export const skills: Skills = [
     category: Category.Languages,
   },
   {
-    name: "Python",
-    icon: SiPython,
-    category: Category.Languages,
-  },
-  {
-    name: "Chakra-UI",
+    name: "Chakra UI",
     icon: SiChakraui,
     category: Category.Frontend,
   },
@@ -124,8 +137,8 @@ export const skills: Skills = [
     category: Category.Backend,
   },
   {
-    name: "TypeORM",
-    icon: BiCodeCurly,
+    name: "MySQL",
+    icon: SiMysql,
     category: Category.Backend,
   },
   {
@@ -157,11 +170,6 @@ export const skills: Skills = [
     name: "React Hook Form",
     icon: SiReacthookform,
     category: Category.Frontend,
-  },
-  {
-    name: "C++",
-    icon: SiCplusplus,
-    category: Category.Languages,
   },
   {
     name: "Vercel",
@@ -197,5 +205,35 @@ export const skills: Skills = [
     name: "React Query",
     icon: SiReactquery,
     category: Category.Frontend,
+  },
+  {
+    name: "Zod",
+    icon: SiZod,
+    category: Category.Frontend,
+  },
+  {
+    name: "TypeORM",
+    icon: BiCodeCurly,
+    category: Category.Backend,
+  },
+  {
+    name: "ClickUp",
+    icon: SiClickup,
+    category: Category.Tools,
+  },
+  {
+    name: "Jira",
+    icon: SiJira,
+    category: Category.Tools,
+  },
+  {
+    name: "Playwright",
+    icon: SiPlaywright,
+    category: Category.Testing,
+  },
+  {
+    name: "Stripe",
+    icon: SiStripe,
+    category: Category.Tools,
   },
 ];
