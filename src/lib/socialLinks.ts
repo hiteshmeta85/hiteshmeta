@@ -20,8 +20,8 @@ export type SocialLinks = Link[];
 export const socialLinks: SocialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/hitesh-meta/",
-    value: "@hitesh-meta",
+    url: "https://www.linkedin.com/in/hiteshmeta",
+    value: "@hiteshmeta",
     icon: SiLinkedin,
   },
   {
@@ -38,20 +38,20 @@ export const socialLinks: SocialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/meta.hitesh85/",
+    url: "https://www.instagram.com/meta.hitesh85",
     value: "@meta.hitesh85",
     icon: SiInstagram,
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/h85._._/",
+    url: "https://www.instagram.com/h85._._",
     value: "@h85._._",
     icon: SiInstagram,
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/MetaHitesh85",
-    value: "@MetaHitesh85",
+    url: "https://twitter.com/hiteshmeta",
+    value: "@hiteshmeta",
     icon: SiTwitter,
   },
 ];
