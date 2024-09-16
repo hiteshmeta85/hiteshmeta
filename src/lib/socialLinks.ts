@@ -2,7 +2,6 @@ import {
   SiGithub,
   SiInstagram,
   SiLinkedin,
-  SiSpotify,
   SiTwitter,
   SiUnsplash,
 } from "react-icons/si";
@@ -38,8 +37,8 @@ export const socialLinks: SocialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/meta.hitesh85",
-    value: "@meta.hitesh85",
+    url: "https://www.instagram.com/_hiteshmeta",
+    value: "@_hiteshmeta",
     icon: SiInstagram,
   },
   {
