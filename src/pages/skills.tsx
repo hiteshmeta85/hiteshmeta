@@ -7,10 +7,12 @@ const Skills = () => {
   return (
     <Layout>
       <div>
-        <h2 className="heading mb-2">Skills</h2>
-        <p className="text">
-          The technologies I&apos;ve worked with in production projects.
-        </p>
+        <div className="leading-none">
+          <h2 className="heading mb-2">Skills</h2>
+          <p className="h5 mb-4">
+            The technologies I&apos;ve worked with in production projects.
+          </p>
+        </div>
         {(Object.keys(Category) as Array<keyof typeof Category>).map((key) => {
           return (
             <SkillsSection
