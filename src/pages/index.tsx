@@ -1,6 +1,4 @@
 import Layout from "../components/Layout";
-import Image from "next/future/image";
-import Avatar from "../../public/avatar.jpeg";
 import FeaturedSection from "../components/FeaturedSection";
 import { featuredProjects } from "../lib/featuredProject";
 import React from "react";
@@ -34,7 +32,7 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        <div className="flex flex-col-reverse justify-center gap-4 lg:flex-row lg:gap-16">
+        <div className="flex flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-16">
           <div className="leading-none">
             <h2 className="heading mb-2">Hitesh Meta</h2>
             <p className="h5 mb-4">SDE @Turnover Global</p>
@@ -51,14 +49,14 @@ const Home = () => {
               )}
             </div>
           </div>
-          <div className="min-w-fit">
+          {/*<div className="min-w-fit">
             <Image
               src={Avatar}
               alt="avatar"
               quality={100}
               className="h-32 w-32 rounded-full object-cover"
             />
-          </div>
+          </div>*/}
         </div>
         <FeaturedSection featuredProjects={featuredProjects} />
       </div>
