@@ -42,12 +42,6 @@ export const socialLinks: SocialLinks = [
     icon: SiInstagram,
   },
   {
-    name: "Instagram",
-    url: "https://www.instagram.com/h85._._",
-    value: "@h85._._",
-    icon: SiInstagram,
-  },
-  {
     name: "Twitter",
     url: "https://twitter.com/hiteshmeta",
     value: "@hiteshmeta",

@@ -8,6 +8,12 @@ export type FeaturedProjects = FeaturedProject[];
 
 export const featuredProjects: FeaturedProjects = [
   {
+    title: "BOG BEACON",
+    description:
+      "Generate Textbooks using AI. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel",
+    link: "https://beaconai.fusioncyber.co/",
+  },
+  {
     title: "CSI-PCE Official Website",
     description:
       "Revamped CSI-PCE's Official Website built using Next.js, TailwindCSS, Typescript, Trpc, Prisma, and PostgreSQL.",
@@ -18,18 +24,6 @@ export const featuredProjects: FeaturedProjects = [
     description:
       "The ultimate chatbot solution designed for commercial applications. Built using Next.js, Typescript, React Query and Shadcn.",
     link: "https://gyanbot.ai/",
-  },
-  {
-    title: "TravHub AI",
-    description:
-      "AI Generated Travel Itineraries. Built using Next.js, Typescript, React Query and Shadcn.",
-    link: "https://travhub.ai/",
-  },
-  {
-    title: "BOG BEACON",
-    description:
-      "Generate Textbooks using AI. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel",
-    link: "https://beaconai.fusioncyber.co/",
   },
   {
     title: "GPod AI",

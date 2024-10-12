@@ -10,7 +10,7 @@ to contribute to innovative web solutions. Currently living in Bengaluru, India.
 With over 3 years of experience, I have worked on frontend,
 backend, testing, CMS technologies, and AI-driven applications.
 Currently,
-contributing to the development of a global B2B e-commerce marketplace at [Turnover Global Pvt](https://www.linkedin.com/company/turnoverglobal/).
+contributing to the development of a global B2B e-commerce marketplace at [Turnover Global](https://www.linkedin.com/company/turnoverglobal/).
 
 The main highlight of my career includes my contribution to a 2+ years of an ongoing multilingual web application,
 a transport management platform (Commutec), an AI-based EdTech platform in cybersecurity space (Beacon AI),
@@ -32,7 +32,7 @@ Core Skills:
 - Databases: PostgreSQL, MySQL
 
 Things I do other than programming?
-I do like wildlife photography.
+I do like landscape and wildlife photography.
 Here's my [photography](https://www.instagram.com/h85._._/) page.
 And I do watch tons of movies and shows.
 SUITS is my favorite.
