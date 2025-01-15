@@ -37,8 +37,8 @@ export const socialLinks: SocialLinks = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/_hiteshmeta",
-    value: "@_hiteshmeta",
+    url: "https://www.instagram.com/hiteshmeta_",
+    value: "@hiteshmeta_",
     icon: SiInstagram,
   },
   {
