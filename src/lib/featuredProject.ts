@@ -8,9 +8,27 @@ export type FeaturedProjects = FeaturedProject[];
 
 export const featuredProjects: FeaturedProjects = [
   {
+    title: "ViralMe",
+    description:
+      "A Creator based UGC platform for brands.",
+    link: "https://apps.apple.com/in/app/viralme/id6738461768",
+  },
+  {
+    title: "Turnover - B2B E-Commerce",
+    description:
+      "Turnover is a B2B ecommerce platform built for the US marketplace.",
+    link: "https://turnover.biz/",
+  },
+  {
+    title: "Turnover - Seller Portal",
+    description:
+      "Platform for sellers to manage products, orders, and inventory.",
+    link: "https://sell.turnover.biz/",
+  },
+  {
     title: "BOG BEACON",
     description:
-      "Generate Textbooks using AI. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel",
+      "An AI-based edTech platform in Cybersecurity space. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel.",
     link: "https://beaconai.fusioncyber.co/",
   },
   {

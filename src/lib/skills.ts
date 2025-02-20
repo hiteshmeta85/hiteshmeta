@@ -24,6 +24,7 @@ import {
   SiReact,
   SiReacthookform,
   SiReactquery,
+  SiShopify,
   SiStorybook,
   SiStrapi,
   SiStripe,
@@ -233,5 +234,10 @@ export const skills: Skills = [
     name: "Stripe",
     icon: SiStripe,
     category: Category.Tools,
+  },
+  {
+    name: "Shopify",
+    icon: SiShopify,
+    category: Category.Backend,
   },
 ];
