@@ -28,25 +28,25 @@ export const featuredProjects: FeaturedProjects = [
   {
     title: "BOG BEACON",
     description:
-      "An AI-based edTech platform in Cybersecurity space. Built using Next.js, Typescript, TailwindCSS, Shadcn, and Vercel.",
+      "An AI-based edTech platform in Cybersecurity space.",
     link: "https://beaconai.fusioncyber.co/",
   },
   {
     title: "CSI-PCE Official Website",
     description:
-      "Revamped CSI-PCE's Official Website built using Next.js, TailwindCSS, Typescript, Trpc, Prisma, and PostgreSQL.",
+      "Revamped CSI-PCE's Official Website with a brand new design and cool new features.",
     link: "https://csi.pce.ac.in/",
   },
   {
     title: "Gyanbot AI",
     description:
-      "The ultimate chatbot solution designed for commercial applications. Built using Next.js, Typescript, React Query and Shadcn.",
+      "The ultimate chatbot solution designed for commercial applications.",
     link: "https://gyanbot.ai/",
   },
   {
     title: "GPod AI",
     description:
-      "Convert Articles to Engaging Podcasts using AI. Built using Next.js, TailwindCSS, Typescript, Supabase, Stripe and Vercel.",
+      "Convert Articles to Engaging Podcasts using AI.",
     link: "https://gpod-ai.vercel.app/",
   },
   {

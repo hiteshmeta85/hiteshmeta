@@ -35,11 +35,13 @@ import {
   SiVercel,
   SiWebstorm,
   SiZod,
+  SiExpo
 } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
 export enum Category {
   Frontend = "Frontend",
+  App = "App",
   Backend = "Backend",
   Languages = "Languages",
   Testing = "Testing",
@@ -239,5 +241,10 @@ export const skills: Skills = [
     name: "Shopify",
     icon: SiShopify,
     category: Category.Backend,
+  },
+  {
+    name: "Expo",
+    icon: SiExpo,
+    category: Category.App,
   },
 ];

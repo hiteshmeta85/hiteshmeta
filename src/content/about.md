@@ -10,9 +10,9 @@ to contribute to innovative web solutions. Currently living in Bengaluru, India.
 With over 3 years of experience, I have worked on frontend,
 backend, testing, CMS technologies, and AI-driven applications.
 Currently,
-contributing to the development of a global B2B e-commerce marketplace at [Turnover Global](https://www.linkedin.com/company/turnoverglobal/).
+contributing to the development of a creator based UGC platform at [ViralMe](https://www.linkedin.com/company/viralmeclub/).
 
-The main highlight of my career includes my contribution to a 2+ years of an ongoing multilingual web application,
+The main highlight of my career includes my contribution to a B2B eCommerce platform for US Marketplace (Turnover Global), 2+ years of an ongoing multilingual web application,
 a transport management platform (Commutec), an AI-based EdTech platform in cybersecurity space (Beacon AI),
 and a successful revamp of CSI-PCE's official website.
 
