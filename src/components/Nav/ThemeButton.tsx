@@ -1,9 +1,24 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { useTheme } from "next-themes";
 
 const ThemeButton = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <button className="rounded bg-zinc-800 p-2 shadow">
+        <div className="icon h-4 w-4" />
+      </button>
+    );
+  }
 
   return (
     <button

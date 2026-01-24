@@ -1,9 +1,9 @@
+"use client";
+
 import { NavItem } from "./NavItem";
 import { navLinks } from "../../lib/navLinks";
-import dynamic from "next/dynamic";
 import { Link, socialLinks } from "../../lib/socialLinks";
-
-const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
+import ThemeButton from "./ThemeButton";
 
 const Nav = () => {
   const github = socialLinks.find((link) => link.name === "GitHub") as Link;

@@ -16,7 +16,6 @@ import {
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiPlaywright,
   SiPostgresql,
   SiPostman,
   SiPrisma,
@@ -35,7 +34,7 @@ import {
   SiVercel,
   SiWebstorm,
   SiZod,
-  SiExpo
+  SiExpo,
 } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -229,7 +228,7 @@ export const skills: Skills = [
   },
   {
     name: "Playwright",
-    icon: SiPlaywright,
+    icon: BiCodeCurly,
     category: Category.Testing,
   },
   {
