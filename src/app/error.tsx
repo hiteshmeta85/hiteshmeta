@@ -2,11 +2,11 @@
 
 import { useEffect } from "react";
 
-export default function Error({
+export default function ErrorPage({
   error,
   reset,
 }: {
-  error: Error & { digest?: string };
+  error: globalThis.Error & { digest?: string };
   reset: () => void;
 }) {
   useEffect(() => {
@@ -17,6 +17,7 @@ export default function Error({
     <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4">
       <h2 className="h2">Something went wrong!</h2>
       <button
+        type="button"
         onClick={reset}
         className="rounded bg-zinc-800 px-4 py-2 text-white hover:bg-zinc-700"
       >

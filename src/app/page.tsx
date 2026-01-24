@@ -1,11 +1,11 @@
-import FeaturedSection from "@/components/FeaturedSection";
-import { featuredProjects } from "@/lib/featuredProject";
 import {
   SiNodedotjs,
   SiReact,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import FeaturedSection from "@/components/FeaturedSection";
+import { featuredProjects } from "@/lib/featuredProject";
 
 const topSkills = [
   { name: "React", Icon: SiReact },

@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllBlogs } from "@/lib/blogs";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Blogs",
@@ -22,7 +22,7 @@ export default function Blogs() {
           <Link key={blog.slug} href={`/blogs/${blog.slug}`}>
             <div className="container-gradient border-gradient flex h-full cursor-pointer flex-col justify-between gap-4 rounded-xl border-4 p-4 shadow-lg duration-300 hover:scale-105">
               <div className="flex flex-col gap-4">
-                <p className="heading text-xl">{blog.frontmatter.title}</p>
+                <p className="h3">{blog.frontmatter.title}</p>
                 <p className="text">{blog.frontmatter.description}</p>
               </div>
               <p className="text mt-4">{blog.frontmatter.date}</p>

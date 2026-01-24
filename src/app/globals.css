@@ -1,94 +1,152 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
+@source "../components/**/*.{js,ts,jsx,tsx}";
+@source "../content/**/*.{md,mdx}";
+@source "../lib/**/*.{js,ts,jsx,tsx}";
+@source "./**/*.{js,ts,jsx,tsx}";
+
+@theme {
+  --font-sans: var(--font-epilogue), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Apply font to body */
 body {
-  font-family: Epilogue, serif;
+  font-family: var(--font-epilogue), ui-sans-serif, system-ui, sans-serif;
 }
 
-@layer components {
-  .container {
-    @apply mx-auto max-w-[875px] px-4 pt-8 pb-4 md:px-12 lg:px-24;
-  }
-  .heading,
-  .h1 {
-    @apply text-[2.5rem] font-extrabold text-zinc-900 dark:text-zinc-200;
-  }
-  .h2 {
-    @apply text-[2rem] font-bold text-zinc-900 dark:text-zinc-200;
-  }
-  .h3 {
-    @apply text-[1.5rem] font-bold text-zinc-800 dark:text-zinc-200;
-  }
-  .h4 {
-    @apply text-[1.25rem] text-zinc-800 dark:text-zinc-200;
-  }
-  .h5 {
-    @apply text-[1rem] text-zinc-700 dark:text-zinc-300;
-  }
-  .h6 {
-    @apply text-[0.875rem] text-zinc-600 dark:text-zinc-400;
-  }
-  .text {
-    @apply text-sm text-zinc-700 dark:text-zinc-400;
-  }
-  .link {
-    @apply cursor-pointer text-zinc-800 underline-offset-2 duration-300 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-300;
-  }
-  .strong {
-    @apply font-bold text-zinc-800 dark:text-zinc-300;
-  }
-  .pre {
-    @apply bg-zinc-200 text-sm text-zinc-900 dark:bg-zinc-800 dark:text-zinc-300;
-  }
-  .hr {
-    @apply border-zinc-200 dark:border-zinc-700;
-  }
-  .prose-style {
-    @apply prose-h1:h1
-    prose-h2:h2
-    prose-h3:h3
-    prose-h4:h4
-    prose-h5:h5
-    prose-h6:h6
-    prose-p:text
-    prose-a:link
-    prose-strong:strong
-    prose-pre:pre
-    prose-hr:hr
-    prose-li:text
-    prose
-    max-w-none
-    text-sm
-    prose-headings:my-4;
-  }
-  .container-gradient {
-    @apply bg-gradient-to-r from-neutral-200 to-zinc-200 dark:from-neutral-800 dark:to-zinc-800;
-  }
-  .link-background-gradient {
-    @apply bg-gradient-to-r from-neutral-900/60 to-zinc-900/60;
-  }
-  .button-gradient {
-    @apply bg-white dark:bg-zinc-900;
-  }
-  .input-gradient {
-    @apply bg-white dark:bg-zinc-900;
-  }
-  .icon {
-    @apply text-zinc-100 dark:text-zinc-300;
-  }
-  .border-gradient {
-    @apply border-zinc-600 shadow-zinc-300 dark:border-zinc-400 dark:shadow-zinc-800;
+/* Custom utility for hiding scrollbar */
+@utility no-scrollbar-visible {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar-visible::-webkit-scrollbar {
-  display: none;
+/* Custom component classes using @apply */
+.container {
+  @apply mx-auto max-w-[875px] px-4 pt-8 pb-4 md:px-12 lg:px-24;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar-visible {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.heading {
+  @apply text-4xl font-extrabold text-zinc-900 dark:text-zinc-200;
+}
+
+.h1 {
+  @apply text-4xl font-extrabold text-zinc-900 dark:text-zinc-200;
+}
+
+.h2 {
+  @apply text-3xl font-bold text-zinc-900 dark:text-zinc-200;
+}
+
+.h3 {
+  @apply text-2xl font-bold text-zinc-800 dark:text-zinc-200;
+}
+
+.h4 {
+  @apply text-xl text-zinc-800 dark:text-zinc-200;
+}
+
+.h5 {
+  @apply text-base text-zinc-700 dark:text-zinc-300;
+}
+
+.h6 {
+  @apply text-sm text-zinc-600 dark:text-zinc-400;
+}
+
+.text {
+  @apply text-sm text-zinc-700 dark:text-zinc-400;
+}
+
+.link {
+  @apply cursor-pointer text-zinc-800 underline-offset-2 duration-300 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-300;
+}
+
+.strong {
+  @apply font-bold text-zinc-800 dark:text-zinc-300;
+}
+
+.pre {
+  @apply bg-zinc-200 text-sm text-zinc-900 dark:bg-zinc-800 dark:text-zinc-300;
+}
+
+.hr {
+  @apply border-zinc-200 dark:border-zinc-700;
+}
+
+.container-gradient {
+  @apply bg-linear-to-r from-neutral-200 to-zinc-200 dark:from-neutral-800 dark:to-zinc-800;
+}
+
+.link-background-gradient {
+  @apply bg-linear-to-r from-neutral-900/60 to-zinc-900/60;
+}
+
+.button-gradient {
+  @apply bg-white dark:bg-zinc-900;
+}
+
+.input-gradient {
+  @apply bg-white dark:bg-zinc-900;
+}
+
+.icon {
+  @apply text-zinc-100 dark:text-zinc-300;
+}
+
+.border-gradient {
+  @apply border-zinc-600 shadow-zinc-300 dark:border-zinc-400 dark:shadow-zinc-800;
+}
+
+/* Typography prose styling */
+.prose-style {
+  @apply prose max-w-none text-sm prose-headings:my-4;
+}
+
+.prose-style :where(h1) {
+  @apply text-4xl font-extrabold text-zinc-900 dark:text-zinc-200;
+}
+
+.prose-style :where(h2) {
+  @apply text-3xl font-bold text-zinc-900 dark:text-zinc-200;
+}
+
+.prose-style :where(h3) {
+  @apply text-2xl font-bold text-zinc-800 dark:text-zinc-200;
+}
+
+.prose-style :where(h4) {
+  @apply text-xl text-zinc-800 dark:text-zinc-200;
+}
+
+.prose-style :where(h5) {
+  @apply text-base text-zinc-700 dark:text-zinc-300;
+}
+
+.prose-style :where(h6) {
+  @apply text-sm text-zinc-600 dark:text-zinc-400;
+}
+
+.prose-style :where(p, li) {
+  @apply text-sm text-zinc-700 dark:text-zinc-400;
+}
+
+.prose-style :where(a) {
+  @apply cursor-pointer text-zinc-800 underline-offset-2 duration-300 hover:text-zinc-600 dark:text-zinc-200 dark:hover:text-zinc-300;
+}
+
+.prose-style :where(strong) {
+  @apply font-bold text-zinc-800 dark:text-zinc-300;
+}
+
+.prose-style :where(pre) {
+  @apply bg-zinc-200 text-sm text-zinc-900 dark:bg-zinc-800 dark:text-zinc-300;
+}
+
+.prose-style :where(hr) {
+  @apply border-zinc-200 dark:border-zinc-700;
 }

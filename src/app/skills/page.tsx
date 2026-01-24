@@ -1,7 +1,7 @@
 "use client";
 
-import { Category, skills } from "@/lib/skills";
 import SkillsSection from "@/components/SkillsSection";
+import { Category, skills } from "@/lib/skills";
 
 export default function Skills() {
   return (

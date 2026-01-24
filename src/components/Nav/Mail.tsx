@@ -1,5 +1,3 @@
-import React from "react";
-
 const Mail = () => {
   return (
     <div className="fixed right-0 hidden h-full px-6 pt-6 lg:block">

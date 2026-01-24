@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Epilogue } from "next/font/google";
-import { ThemeProvider } from "@/components/ui/ThemeProvider";
-import { Toaster } from "@/components/ui/Toaster";
-import Nav from "@/components/Nav/Nav";
+import Footer from "@/components/Footer";
 import Mail from "@/components/Nav/Mail";
 import MobileNav from "@/components/Nav/MobileNav";
-import Footer from "@/components/Footer";
+import Nav from "@/components/Nav/Nav";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
+import { Toaster } from "@/components/ui/Toaster";
 import "./globals.css";
 
 const epilogue = Epilogue({
@@ -40,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${epilogue.variable} font-sans`} suppressHydrationWarning>
+      <body
+        className={`${epilogue.variable} font-sans`}
+        suppressHydrationWarning
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -51,12 +54,14 @@ export default function RootLayout({
             <Nav />
             <Mail />
             <MobileNav />
-            <main className="no-scrollbar-visible container relative min-h-[100vh] pb-20">
+            <main className="container relative min-h-screen pb-20">
               {children}
-              <Footer />
-              <Toaster />
+              <div className="mt-16">
+                <Footer />
+              </div>
             </main>
           </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

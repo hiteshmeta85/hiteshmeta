@@ -1,8 +1,8 @@
-import { notFound } from "next/navigation";
-import { getAllBlogSlugs, getBlogBySlug } from "@/lib/blogs";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { mdxComponents } from "@/lib/mdx-components";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import { getAllBlogSlugs, getBlogBySlug } from "@/lib/blogs";
+import { mdxComponents } from "@/lib/mdx-components";
 
 interface BlogPageProps {
   params: Promise<{ slug: string }>;

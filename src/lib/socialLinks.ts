@@ -1,11 +1,11 @@
+import type { IconType } from "react-icons";
 import {
   SiGithub,
   SiInstagram,
   SiLinkedin,
-  SiX,
   SiUnsplash,
+  SiX,
 } from "react-icons/si";
-import { IconType } from "react-icons";
 
 export type Link = {
   name: string;

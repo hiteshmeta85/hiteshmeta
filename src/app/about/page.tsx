@@ -1,9 +1,9 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import matter from "gray-matter";
+import type { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { mdxComponents } from "@/lib/mdx-components";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
