@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import Mail from "@/components/Nav/Mail";
 import MobileNav from "@/components/Nav/MobileNav";
 import Nav from "@/components/Nav/Nav";
+import { SkipToContent } from "@/components/ui/SkipToContent";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Toaster } from "@/components/ui/Toaster";
 import { siteConfig, themeConfig } from "@/lib/config";
@@ -87,6 +88,7 @@ export default function RootLayout({
         className={`${epilogue.variable} font-sans`}
         suppressHydrationWarning
       >
+        <SkipToContent />
         <ThemeProvider
           attribute="class"
           defaultTheme={themeConfig.defaultTheme}
@@ -97,7 +99,7 @@ export default function RootLayout({
             <Nav />
             <Mail />
             <MobileNav />
-            <main className="container relative min-h-screen pb-20">
+            <main id="main-content" className="container relative min-h-screen pb-20">
               {children}
               <div className="mt-16">
                 <Footer />
