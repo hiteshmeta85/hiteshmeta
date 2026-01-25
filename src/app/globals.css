@@ -153,3 +153,8 @@ body {
 .prose-style :where(hr) {
   @apply border-zinc-200 dark:border-zinc-700;
 }
+
+/* Masonry item base styles */
+.masonry-item {
+  display: block;
+}
