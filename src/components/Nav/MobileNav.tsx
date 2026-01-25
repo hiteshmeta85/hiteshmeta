@@ -28,7 +28,7 @@ const MobileNav = () => {
           href={linkedin.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-sm bg-zinc-800 p-2 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400"
+          className="rounded-sm bg-zinc-800 p-2 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-600 hover:shadow-xl focus:ring-2 focus:ring-zinc-400 focus:outline-none"
         >
           <span className="sr-only">Visit {linkedin.name}</span>
           {React.createElement(linkedin.icon, {
@@ -41,7 +41,7 @@ const MobileNav = () => {
           href={github.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-sm bg-zinc-800 p-2 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400"
+          className="rounded-sm bg-zinc-800 p-2 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-600 hover:shadow-xl focus:ring-2 focus:ring-zinc-400 focus:outline-none"
         >
           <span className="sr-only">Visit {github.name}</span>
           {React.createElement(github.icon, {

@@ -26,7 +26,7 @@ export const NavItem = ({
       onFocus={() => setIsHovered(true)}
       onBlur={() => setIsHovered(false)}
       className={cn(
-        "rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400",
+        "rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:ring-2 focus:ring-zinc-400 focus:outline-none",
         pathname === slug || isHovered ? "bg-zinc-600" : "bg-zinc-800"
       )}
     >
@@ -35,7 +35,7 @@ export const NavItem = ({
       </span>
 
       {isHovered && (
-        <span className="absolute left-10 top-0 h-full rounded bg-zinc-700 p-2 text-xs text-zinc-200 shadow-xl">
+        <span className="absolute top-0 left-10 h-full rounded bg-zinc-700 p-2 text-xs text-zinc-200 shadow-xl">
           {name}
         </span>
       )}

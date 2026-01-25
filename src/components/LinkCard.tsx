@@ -14,7 +14,7 @@ const LinkCard = ({ url, value, name, icon }: LinkCardProps) => {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="link-background-gradient flex w-full items-center justify-between rounded-lg p-3 duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-zinc-400"
+      className="link-background-gradient flex w-full items-center justify-between rounded-lg p-3 duration-200 hover:-translate-y-1 hover:shadow-lg focus:ring-2 focus:ring-zinc-400 focus:outline-none"
     >
       <p className="m-0 text-sm text-zinc-300 md:text-base lg:text-base">
         {name} <span>{" // "}</span> {value}

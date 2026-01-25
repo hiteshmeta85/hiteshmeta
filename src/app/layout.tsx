@@ -102,7 +102,7 @@ export default function RootLayout({
             <MobileNav />
             <main
               id="main-content"
-              className="container relative min-h-screen pb-20"
+              className="relative container min-h-screen pb-20"
             >
               {children}
               <div className="mt-16">

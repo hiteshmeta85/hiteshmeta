@@ -15,7 +15,7 @@ const SkillsSection = (props: { skills: ISkills; category: Category }) => {
       >
         {category}
       </h2>
-      <ul className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 list-none p-0">
+      <ul className="grid w-full list-none grid-cols-2 gap-4 p-0 md:grid-cols-3 md:gap-6">
         {skills.map((skill) => (
           <li
             key={skill.name}
@@ -26,7 +26,7 @@ const SkillsSection = (props: { skills: ISkills; category: Category }) => {
                 className: "text-zinc-600 h-6 w-6 dark:text-zinc-300",
               })}
             </span>
-            <span className="relative top-[2px] w-full text-sm font-medium leading-none tracking-wide">
+            <span className="relative top-[2px] w-full text-sm leading-none font-medium tracking-wide">
               {skill.name}
             </span>
           </li>
