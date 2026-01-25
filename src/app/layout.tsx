@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Epilogue } from "next/font/google";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
 import Mail from "@/components/Nav/Mail";
 import MobileNav from "@/components/Nav/MobileNav";
 import Nav from "@/components/Nav/Nav";
@@ -15,14 +16,58 @@ const epilogue = Epilogue({
   display: "swap",
 });
 
+const baseUrl = "https://hiteshmeta.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: {
-    default: "hiteshmeta",
-    template: "%s | hiteshmeta",
+    default: "Hitesh Meta",
+    template: "%s | Hitesh Meta",
   },
-  description: "Personal Portfolio Website of Hitesh Meta",
+  description:
+    "Software Engineer specializing in React, TypeScript, and Node.js. Building dynamic web applications.",
+  keywords: [
+    "Hitesh Meta",
+    "Software Engineer",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Web Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Hitesh Meta" }],
+  creator: "Hitesh Meta",
   icons: {
     icon: "/favicon.ico",
+  },
+  manifest: "/manifest.json",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: baseUrl,
+    siteName: "Hitesh Meta",
+    title: "Hitesh Meta - Software Engineer",
+    description:
+      "Software Engineer specializing in React, TypeScript, and Node.js. Building dynamic web applications.",
+    images: [
+      {
+        url: "/avatar.jpeg",
+        width: 400,
+        height: 400,
+        alt: "Hitesh Meta",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Hitesh Meta - Software Engineer",
+    description:
+      "Software Engineer specializing in React, TypeScript, and Node.js. Building dynamic web applications.",
+    images: ["/avatar.jpeg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -40,6 +85,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <JsonLd />
+      </head>
       <body
         className={`${epilogue.variable} font-sans`}
         suppressHydrationWarning

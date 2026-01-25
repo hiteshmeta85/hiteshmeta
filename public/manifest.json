@@ -1,0 +1,16 @@
+{
+  "name": "Hitesh Meta",
+  "short_name": "hiteshmeta",
+  "description": "Personal Portfolio Website of Hitesh Meta",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#18181b",
+  "theme_color": "#18181b",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
