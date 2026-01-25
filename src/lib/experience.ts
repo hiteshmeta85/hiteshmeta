@@ -143,7 +143,7 @@ export const experiences: WorkExperience[] = [
     ],
     projects: [
       {
-        name: "Bog Beacon",
+        name: "Beacon AI",
         description: "An EdTech platform for the cybersecurity space.",
       },
       {

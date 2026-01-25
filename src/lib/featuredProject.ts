@@ -26,7 +26,7 @@ export const featuredProjects: FeaturedProjects = [
     link: "https://sell.turnover.biz/",
   },
   {
-    title: "BOG BEACON",
+    title: "Beacon AI",
     description:
       "An AI-powered edtech platform focused on cybersecurity education.",
     link: "https://beaconai.fusioncyber.co/",
