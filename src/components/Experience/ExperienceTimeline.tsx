@@ -1,6 +1,7 @@
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 import type { WorkExperience } from "@/lib/experience";
+import { cn } from "@/lib/utils";
 
 type ExperienceTimelineProps = {
   experiences: WorkExperience[];
@@ -29,11 +30,12 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
 
             {/* Timeline dot */}
             <div
-              className={`absolute left-0 top-1.5 h-4 w-4 rounded-full ${
+              className={cn(
+                "absolute left-0 top-1.5 h-4 w-4 rounded-full",
                 isCurrent
                   ? "bg-emerald-500 ring-4 ring-emerald-500/20"
                   : "border-2 border-zinc-400 bg-white dark:border-zinc-500 dark:bg-zinc-900"
-              }`}
+              )}
               aria-hidden="true"
             />
 
@@ -75,7 +77,10 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
               {/* Technologies */}
               {exp.technologies.length > 0 && (
                 <div className="mb-4">
-                  <ul className="flex flex-wrap gap-2" aria-label="Technologies used">
+                  <ul
+                    className="flex flex-wrap gap-2"
+                    aria-label="Technologies used"
+                  >
                     {exp.technologies.map((tech) => (
                       <li
                         key={tech.name}
@@ -121,7 +126,7 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
                               href={project.link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex-shrink-0 text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+                              className="shrink-0 text-zinc-500 transition-colors hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
                               aria-label={`Visit ${project.name} project`}
                             >
                               <FiExternalLink className="h-4 w-4" />
