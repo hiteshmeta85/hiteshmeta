@@ -1,9 +1,12 @@
+import { siteConfig } from "@/lib/config";
+import { socialLinks } from "@/lib/socialLinks";
+
 export function JsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Hitesh Meta",
-    url: "https://hiteshmeta.vercel.app",
+    name: siteConfig.author.name,
+    url: siteConfig.url,
     jobTitle: "Software Engineer",
     worksFor: {
       "@type": "Organization",
@@ -17,10 +20,7 @@ export function JsonLd() {
       "Next.js",
       "Web Development",
     ],
-    sameAs: [
-      "https://github.com/hiteshmeta",
-      "https://linkedin.com/in/hiteshmeta",
-    ],
+    sameAs: socialLinks.map((link) => link.url),
   };
 
   return (

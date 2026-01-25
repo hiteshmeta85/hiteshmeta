@@ -8,6 +8,7 @@ import MobileNav from "@/components/Nav/MobileNav";
 import Nav from "@/components/Nav/Nav";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Toaster } from "@/components/ui/Toaster";
+import { siteConfig, themeConfig } from "@/lib/config";
 import "./globals.css";
 
 const epilogue = Epilogue({
@@ -17,54 +18,41 @@ const epilogue = Epilogue({
   display: "swap",
 });
 
-const baseUrl = "https://hiteshmeta.vercel.app";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Hitesh Meta",
-    template: "%s | Hitesh Meta",
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
   },
-  description:
-    "Software Engineer specializing in React, TypeScript, and Node.js. Building dynamic web applications.",
-  keywords: [
-    "Hitesh Meta",
-    "Software Engineer",
-    "React",
-    "TypeScript",
-    "Node.js",
-    "Web Developer",
-    "Portfolio",
-  ],
-  authors: [{ name: "Hitesh Meta" }],
-  creator: "Hitesh Meta",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: [{ name: siteConfig.author.name }],
+  creator: siteConfig.author.name,
   icons: {
-    icon: "/favicon.ico",
+    icon: siteConfig.images.favicon,
   },
   manifest: "/manifest.json",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: baseUrl,
-    siteName: "Hitesh Meta",
-    title: "Hitesh Meta - Software Engineer",
-    description:
-      "Software Engineer specializing in React, TypeScript, and Node.js. Building dynamic web applications.",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} - Software Engineer`,
+    description: siteConfig.description,
     images: [
       {
-        url: "/avatar.jpeg",
+        url: siteConfig.images.avatar,
         width: 400,
         height: 400,
-        alt: "Hitesh Meta",
+        alt: siteConfig.name,
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Hitesh Meta - Software Engineer",
-    description:
-      "Software Engineer specializing in React, TypeScript, and Node.js. Building dynamic web applications.",
-    images: ["/avatar.jpeg"],
+    title: `${siteConfig.name} - Software Engineer`,
+    description: siteConfig.description,
+    images: [siteConfig.images.avatar],
   },
   robots: {
     index: true,
@@ -74,8 +62,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "#18181b" },
+    {
+      media: "(prefers-color-scheme: light)",
+      color: themeConfig.colors.light.themeColor,
+    },
+    {
+      media: "(prefers-color-scheme: dark)",
+      color: themeConfig.colors.dark.themeColor,
+    },
   ],
 };
 
@@ -95,7 +89,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme={themeConfig.defaultTheme}
           enableSystem
           disableTransitionOnChange
         >

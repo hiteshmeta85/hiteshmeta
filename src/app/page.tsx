@@ -5,6 +5,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import FeaturedSection from "@/components/FeaturedSection";
+import { siteConfig } from "@/lib/config";
 import { featuredProjects } from "@/lib/featuredProject";
 
 const topSkills = [
@@ -19,8 +20,8 @@ export default function Home() {
     <div>
       <div className="flex flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-16">
         <div className="leading-none">
-          <h2 className="heading mb-2">Hitesh Meta</h2>
-          <p className="h5 mb-4">SDE II @Memorang AI</p>
+          <h2 className="heading mb-2">{siteConfig.author.name}</h2>
+          <p className="h5 mb-4">{siteConfig.author.role}</p>
           <p className="text">
             I&apos;m a Software Engineer, proficient in creating dynamic web
             applications.
