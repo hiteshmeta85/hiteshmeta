@@ -67,14 +67,14 @@ export const experiences: WorkExperience[] = [
   {
     id: "viralme",
     company: "ViralMe",
-    role: "SDE I (Frontend Lead)",
+    role: "SDE I",
     location: "On-site",
     period: {
       start: "Nov 2024",
       end: "May 2025",
     },
     description:
-      "Contributing to the development of a creator-based UGC platform for brands. Built an iOS and Android app for creators and a Shopify app for merchants from scratch.",
+      "Contributed to the development of a creator-based UGC platform for brands. Built an iOS and Android app for creators and a Shopify app for merchants from scratch.",
     technologies: [
       { name: "Next.js", icon: SiNextdotjs },
       { name: "React Expo", icon: SiExpo },
