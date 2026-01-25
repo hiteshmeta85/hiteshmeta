@@ -19,22 +19,22 @@
     "rules": {
       "recommended": true,
       "a11y": {
-        "useButtonType": "warn",
-        "useAltText": "warn",
-        "useKeyWithMouseEvents": "off",
-        "useKeyWithClickEvents": "off",
-        "noNoninteractiveElementToInteractiveRole": "off",
-        "noStaticElementInteractions": "off"
+        "useButtonType": "error",
+        "useAltText": "error",
+        "useKeyWithMouseEvents": "error",
+        "useKeyWithClickEvents": "error",
+        "noNoninteractiveElementToInteractiveRole": "warn",
+        "noStaticElementInteractions": "error"
       },
       "correctness": {
-        "noUnusedImports": "warn",
-        "noUnusedVariables": "warn"
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
       },
       "style": {
-        "noNonNullAssertion": "off"
+        "noNonNullAssertion": "warn"
       },
       "suspicious": {
-        "noExplicitAny": "warn",
+        "noExplicitAny": "error",
         "noArrayIndexKey": "warn"
       }
     }
