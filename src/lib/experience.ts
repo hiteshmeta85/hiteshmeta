@@ -99,7 +99,7 @@ export const experiences: WorkExperience[] = [
   {
     id: "turnover-global",
     company: "Turnover Global",
-    role: "SDE I (Frontend Lead)",
+    role: "SDE I",
     location: "On-site",
     period: {
       start: "Mar 2024",
@@ -203,7 +203,7 @@ export const experiences: WorkExperience[] = [
   {
     id: "weframetech",
     company: "WeFrameTech",
-    role: "Full-Stack Web Developer",
+    role: "Full-Stack Web Developer (Intern)",
     location: "Remote, Part-time",
     period: {
       start: "Feb 2023",
