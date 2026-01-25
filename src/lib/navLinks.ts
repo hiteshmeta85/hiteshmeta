@@ -1,5 +1,11 @@
 import type { IconType } from "react-icons";
-import { FiHome, FiPaperclip, FiTerminal, FiUser } from "react-icons/fi";
+import {
+  FiBriefcase,
+  FiHome,
+  FiPaperclip,
+  FiTerminal,
+  FiUser,
+} from "react-icons/fi";
 
 export type NavItem = {
   name: string;
@@ -19,6 +25,11 @@ export const navLinks: NavLinks = [
     name: "About",
     slug: "/about",
     icon: FiUser,
+  },
+  {
+    name: "Experience",
+    slug: "/experience",
+    icon: FiBriefcase,
   },
   {
     name: "Skills",
