@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { navLinks } from "../../lib/navLinks";
 import { type Link, socialLinks } from "../../lib/socialLinks";
 import { NavItem } from "./NavItem";
@@ -10,28 +11,48 @@ const Nav = () => {
   const linkedin = socialLinks.find((link) => link.name === "LinkedIn") as Link;
 
   return (
-    <div className="fixed hidden h-full px-6 pt-6 lg:block">
+    <nav aria-label="Main navigation" className="fixed hidden h-full px-6 pt-6 lg:block">
       <div className="flex h-full flex-col items-center justify-start gap-4">
-        {navLinks.map((item) => {
-          return (
-            <NavItem
-              key={item.name}
-              slug={item.slug}
-              icon={item.icon}
-              name={item.name}
-            />
-          );
-        })}
-        <a href={linkedin.url} target="_blank" rel="noreferrer">
-          <NavItem name={linkedin.name} icon={linkedin.icon} />
+        {navLinks.map((item) => (
+          <NavItem
+            key={item.name}
+            slug={item.slug}
+            icon={item.icon}
+            name={item.name}
+          />
+        ))}
+        <a
+          href={linkedin.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${linkedin.name}`}
+          className="rounded-sm bg-zinc-800 p-2 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400"
+        >
+          <span aria-hidden="true">
+            {React.createElement(linkedin.icon, {
+              width: "1rem",
+              className: "icon",
+            })}
+          </span>
         </a>
-        <a href={github.url} target="_blank" rel="noreferrer">
-          <NavItem name={github.name} icon={github.icon} />
+        <a
+          href={github.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${github.name}`}
+          className="rounded-sm bg-zinc-800 p-2 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400"
+        >
+          <span aria-hidden="true">
+            {React.createElement(github.icon, {
+              width: "1rem",
+              className: "icon",
+            })}
+          </span>
         </a>
         <ThemeButton />
-        <div className="mt-2 h-full border-r-2 border-zinc-800" />
+        <div className="mt-2 h-full border-r-2 border-zinc-800" aria-hidden="true" />
       </div>
-    </div>
+    </nav>
   );
 };
 

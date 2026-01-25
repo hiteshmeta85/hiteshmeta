@@ -14,7 +14,11 @@ const ThemeButton = () => {
 
   if (!mounted) {
     return (
-      <button type="button" className="rounded bg-zinc-800 p-2 shadow">
+      <button
+        type="button"
+        aria-label="Toggle theme"
+        className="rounded bg-zinc-800 p-2 shadow focus:outline-none focus:ring-2 focus:ring-zinc-400"
+      >
         <div className="icon h-4 w-4" />
       </button>
     );
@@ -23,12 +27,13 @@ const ThemeButton = () => {
   return (
     <button
       type="button"
-      className="rounded bg-zinc-800 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-700 hover:shadow-xl"
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+      className="rounded bg-zinc-800 shadow duration-300 ease-in-out hover:scale-110 hover:bg-zinc-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400"
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
       }}
     >
-      <div className="icon p-2">
+      <div className="icon p-2" aria-hidden="true">
         {theme === "dark" ? <FiMoon /> : <FiSun />}
       </div>
     </button>
