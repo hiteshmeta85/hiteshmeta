@@ -34,7 +34,7 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
                 "absolute top-1.5 left-0 h-4 w-4 rounded-full",
                 isCurrent
                   ? "bg-emerald-500 ring-4 ring-emerald-500/20"
-                  : "border-2 border-zinc-400 bg-white dark:border-zinc-500 dark:bg-zinc-900",
+                  : "border-2 border-zinc-400 bg-white dark:border-zinc-500 dark:bg-zinc-900"
               )}
               aria-hidden="true"
             />

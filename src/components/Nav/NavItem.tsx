@@ -27,7 +27,7 @@ export const NavItem = ({
       onBlur={() => setIsHovered(false)}
       className={cn(
         "rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:ring-2 focus:ring-zinc-400 focus:outline-none",
-        pathname === slug || isHovered ? "bg-zinc-600" : "bg-zinc-800",
+        pathname === slug || isHovered ? "bg-zinc-600" : "bg-zinc-800"
       )}
     >
       <span aria-hidden="true">
