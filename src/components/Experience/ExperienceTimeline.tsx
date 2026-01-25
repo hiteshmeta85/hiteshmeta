@@ -23,7 +23,7 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
             {/* Timeline line */}
             {!isLast && (
               <div
-                className="absolute left-[7px] top-4 h-full w-0.5 bg-zinc-300 dark:bg-zinc-700"
+                className="absolute top-4 left-[7px] h-full w-0.5 bg-zinc-300 dark:bg-zinc-700"
                 aria-hidden="true"
               />
             )}
@@ -31,10 +31,10 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
             {/* Timeline dot */}
             <div
               className={cn(
-                "absolute left-0 top-1.5 h-4 w-4 rounded-full",
+                "absolute top-1.5 left-0 h-4 w-4 rounded-full",
                 isCurrent
                   ? "bg-emerald-500 ring-4 ring-emerald-500/20"
-                  : "border-2 border-zinc-400 bg-white dark:border-zinc-500 dark:bg-zinc-900"
+                  : "border-2 border-zinc-400 bg-white dark:border-zinc-500 dark:bg-zinc-900",
               )}
               aria-hidden="true"
             />
@@ -84,7 +84,7 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
                     {exp.technologies.map((tech) => (
                       <li
                         key={tech.name}
-                        className="inline-flex items-center gap-1.5 rounded-md bg-zinc-100 px-2 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                        className="inline-flex items-center gap-1.5 rounded-md border border-zinc-600 bg-zinc-100 px-2 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
                       >
                         <span aria-hidden="true">
                           {React.createElement(tech.icon, {
@@ -101,14 +101,14 @@ const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {
               {/* Projects */}
               {exp.projects.length > 0 && (
                 <div>
-                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                  <h4 className="mb-2 text-xs font-semibold tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
                     Projects
                   </h4>
                   <ul className="space-y-2">
                     {exp.projects.map((project) => (
                       <li
                         key={project.name}
-                        className="rounded-md bg-zinc-50 p-3 dark:bg-zinc-800/50"
+                        className="rounded-md bg-zinc-50 p-3 dark:bg-zinc-700"
                       >
                         <div className="flex items-start justify-between gap-2">
                           <div>

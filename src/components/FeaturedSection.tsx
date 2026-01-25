@@ -44,7 +44,7 @@ const FeaturedSection = ({
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="h-full rounded-lg duration-300 hover:scale-[101%] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400"
+              className="h-full rounded-lg duration-300 hover:scale-[101%] hover:shadow-xl focus:ring-2 focus:ring-zinc-400 focus:outline-none"
             >
               <ProjectCard
                 title={project.title}
