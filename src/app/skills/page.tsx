@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <div>
       <div className="leading-none">
-        <h2 className="heading mb-2">Skills</h2>
+        <h1 className="heading mb-2">Skills</h1>
         <p className="h5 mb-4">
           The technologies I&apos;ve worked with in production projects.
         </p>

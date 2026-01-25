@@ -14,12 +14,15 @@ export default function ErrorPage({
   }, [error]);
 
   return (
-    <div className="flex min-h-[50vh] flex-col items-center justify-center gap-4">
-      <h2 className="h2">Something went wrong!</h2>
+    <div
+      role="alert"
+      className="flex min-h-[50vh] flex-col items-center justify-center gap-4"
+    >
+      <h1 className="h2">Something went wrong!</h1>
       <button
         type="button"
         onClick={reset}
-        className="rounded bg-zinc-800 px-4 py-2 text-white hover:bg-zinc-700"
+        className="rounded bg-zinc-800 px-4 py-2 text-white hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-400"
       >
         Try again
       </button>

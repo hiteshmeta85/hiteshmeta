@@ -99,7 +99,10 @@ export default function RootLayout({
             <Nav />
             <Mail />
             <MobileNav />
-            <main id="main-content" className="container relative min-h-screen pb-20">
+            <main
+              id="main-content"
+              className="container relative min-h-screen pb-20"
+            >
               {children}
               <div className="mt-16">
                 <Footer />

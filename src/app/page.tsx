@@ -20,7 +20,7 @@ export default function Home() {
     <div>
       <div className="flex flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-16">
         <div className="leading-none">
-          <h2 className="heading mb-2">{siteConfig.author.name}</h2>
+          <h1 className="heading mb-2">{siteConfig.author.name}</h1>
           <p className="h5 mb-4">{siteConfig.author.role}</p>
           <p className="text">
             I&apos;m a Software Engineer, proficient in creating dynamic web

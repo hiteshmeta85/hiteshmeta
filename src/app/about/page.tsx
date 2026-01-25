@@ -22,7 +22,7 @@ export default async function About() {
 
   return (
     <div className="leading-none">
-      <h2 className="heading mb-2">About Me</h2>
+      <h1 className="heading mb-2">About Me</h1>
       <div className="prose-style">
         <MDXRemote source={content} components={mdxComponents} />
       </div>
