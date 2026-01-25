@@ -5,20 +5,23 @@
 ## Getting Started
 
 1. Clone the repository
-2. Run `npm install` to install the dependencies
-3. Run `npm run dev` to start the development server
-4. Run `npm run build` to build the project
-5. Run `npm run start` to start the production server
+2. Run `bun install` to install the dependencies
+3. Run `bun dev` to start the development server
+4. Run `bun run build` to build the project
+5. Run `bun start` to start the production server
 
 ## Node Version
 
-> v16.15.1
+> v22+
 
-## Technologies Used & Links
+## Technologies Used
 
-- [Next.js](https://nextjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Typescript](https://www.typescriptlang.org/)
+- [Next.js 16](https://nextjs.org/) (App Router)
+- [React 19](https://react.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [TypeScript 5](https://www.typescriptlang.org/)
+- [Biome](https://biomejs.dev/) (Linting & Formatting)
+- [Bun](https://bun.sh/) (Package Manager)
 
 ---
 
