@@ -1,11 +1,11 @@
+import type { IconType } from "react-icons";
 import {
   SiGithub,
   SiInstagram,
   SiLinkedin,
-  SiTwitter,
   SiUnsplash,
+  SiX,
 } from "react-icons/si";
-import { IconType } from "react-icons";
 
 export type Link = {
   name: string;
@@ -42,9 +42,9 @@ export const socialLinks: SocialLinks = [
     icon: SiInstagram,
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/hiteshmeta",
+    name: "X",
+    url: "https://x.com/hiteshmeta",
     value: "@hiteshmeta",
-    icon: SiTwitter,
+    icon: SiX,
   },
 ];

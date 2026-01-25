@@ -1,6 +1,8 @@
+"use client";
+
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { useRouter } from "next/router";
-import { NavItem as NavItemType } from "../../lib/navLinks";
+import type { NavItem as NavItemType } from "../../lib/navLinks";
 
 export const NavItem = ({
   slug,
@@ -8,6 +10,7 @@ export const NavItem = ({
   icon,
 }: Omit<NavItemType, "slug"> & { slug?: string }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const [isMouseOver, setIsMouseOver] = useState(false);
 
   return (
@@ -23,12 +26,12 @@ export const NavItem = ({
       }}
       className={`
           ${
-            router.asPath === slug
+            pathname === slug
               ? "bg-zinc-600"
               : isMouseOver
-              ? "bg-zinc-600"
-              : "bg-zinc-800"
-          } 
+                ? "bg-zinc-600"
+                : "bg-zinc-800"
+          }
           rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl
       `}
     >

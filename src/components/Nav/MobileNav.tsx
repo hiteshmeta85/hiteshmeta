@@ -1,11 +1,10 @@
-import React from "react";
-import { navLinks } from "../../lib/navLinks";
-import MobileNavItem from "./MobileNavItem";
-import dynamic from "next/dynamic";
-import { NavItem } from "./NavItem";
-import { Link, socialLinks } from "../../lib/socialLinks";
+"use client";
 
-const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
+import { navLinks } from "../../lib/navLinks";
+import { type Link, socialLinks } from "../../lib/socialLinks";
+import MobileNavItem from "./MobileNavItem";
+import { NavItem } from "./NavItem";
+import ThemeButton from "./ThemeButton";
 
 const MobileNav = () => {
   const github = socialLinks.find((link) => link.name === "GitHub") as Link;
@@ -13,10 +12,10 @@ const MobileNav = () => {
 
   return (
     <div className="container pt-4 pb-0 lg:hidden">
-      <div className="no-scrollbar-visible flex h-full gap-4 overflow-x-scroll">
-        {navLinks.map((item, index) => {
+      <div className="flex h-full gap-4 overflow-x-scroll">
+        {navLinks.map((item) => {
           return (
-            <MobileNavItem key={index} slug={item.slug} icon={item.icon} />
+            <MobileNavItem key={item.name} slug={item.slug} icon={item.icon} />
           );
         })}
         <a href={linkedin.url} target="_blank" rel="noreferrer">

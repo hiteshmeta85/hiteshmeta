@@ -9,8 +9,7 @@ export type FeaturedProjects = FeaturedProject[];
 export const featuredProjects: FeaturedProjects = [
   {
     title: "ViralMe",
-    description:
-      "A Creator based UGC platform for brands.",
+    description: "A Creator based UGC platform for brands.",
     link: "https://apps.apple.com/in/app/viralme/id6738461768",
   },
   {
@@ -27,8 +26,7 @@ export const featuredProjects: FeaturedProjects = [
   },
   {
     title: "BOG BEACON",
-    description:
-      "An AI-based edTech platform in Cybersecurity space.",
+    description: "An AI-based edTech platform in Cybersecurity space.",
     link: "https://beaconai.fusioncyber.co/",
   },
   {
@@ -45,8 +43,7 @@ export const featuredProjects: FeaturedProjects = [
   },
   {
     title: "GPod AI",
-    description:
-      "Convert Articles to Engaging Podcasts using AI.",
+    description: "Convert Articles to Engaging Podcasts using AI.",
     link: "https://gpod-ai.vercel.app/",
   },
   {

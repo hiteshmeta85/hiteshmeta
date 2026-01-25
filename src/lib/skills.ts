@@ -1,4 +1,5 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
+import { BiCodeCurly } from "react-icons/bi";
 import {
   SiAdonisjs,
   SiApollographql,
@@ -6,6 +7,7 @@ import {
   SiClickup,
   SiCss3,
   SiCypress,
+  SiExpo,
   SiExpress,
   SiFigma,
   SiGit,
@@ -16,7 +18,6 @@ import {
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiPlaywright,
   SiPostgresql,
   SiPostman,
   SiPrisma,
@@ -35,9 +36,7 @@ import {
   SiVercel,
   SiWebstorm,
   SiZod,
-  SiExpo
 } from "react-icons/si";
-import { BiCodeCurly } from "react-icons/bi";
 
 export enum Category {
   Frontend = "Frontend",
@@ -229,7 +228,7 @@ export const skills: Skills = [
   },
   {
     name: "Playwright",
-    icon: SiPlaywright,
+    icon: BiCodeCurly,
     category: Category.Testing,
   },
   {

@@ -1,5 +1,5 @@
+import type { IconType } from "react-icons";
 import { FiHome, FiPaperclip, FiTerminal, FiUser } from "react-icons/fi";
-import { IconType } from "react-icons";
 
 export type NavItem = {
   name: string;

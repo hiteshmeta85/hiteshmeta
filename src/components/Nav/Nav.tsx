@@ -1,9 +1,9 @@
-import { NavItem } from "./NavItem";
-import { navLinks } from "../../lib/navLinks";
-import dynamic from "next/dynamic";
-import { Link, socialLinks } from "../../lib/socialLinks";
+"use client";
 
-const ThemeButton = dynamic(() => import("./ThemeButton"), { ssr: false });
+import { navLinks } from "../../lib/navLinks";
+import { type Link, socialLinks } from "../../lib/socialLinks";
+import { NavItem } from "./NavItem";
+import ThemeButton from "./ThemeButton";
 
 const Nav = () => {
   const github = socialLinks.find((link) => link.name === "GitHub") as Link;
@@ -12,10 +12,10 @@ const Nav = () => {
   return (
     <div className="fixed hidden h-full px-6 pt-6 lg:block">
       <div className="flex h-full flex-col items-center justify-start gap-4">
-        {navLinks.map((item, index) => {
+        {navLinks.map((item) => {
           return (
             <NavItem
-              key={index}
+              key={item.name}
               slug={item.slug}
               icon={item.icon}
               name={item.name}
