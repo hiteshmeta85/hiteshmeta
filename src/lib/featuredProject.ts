@@ -10,7 +10,8 @@ export type FeaturedProjects = FeaturedProject[];
 export const featuredProjects: FeaturedProjects = [
   {
     title: "ViralMe",
-    description: "A creator-based UGC platform connecting brands with content creators.",
+    description:
+      "A creator-based UGC platform connecting brands with content creators.",
     link: "https://apps.apple.com/in/app/viralme/id6738461768",
   },
   {
@@ -20,17 +21,20 @@ export const featuredProjects: FeaturedProjects = [
   },
   {
     title: "Turnover - Seller Portal",
-    description: "A seller portal for managing products, orders, and inventory.",
+    description:
+      "A seller portal for managing products, orders, and inventory.",
     link: "https://sell.turnover.biz/",
   },
   {
     title: "BOG BEACON",
-    description: "An AI-powered edtech platform focused on cybersecurity education.",
+    description:
+      "An AI-powered edtech platform focused on cybersecurity education.",
     link: "https://beaconai.fusioncyber.co/",
   },
   {
     title: "CSI-PCE Official Website",
-    description: "A redesigned official website with modern UI and enhanced features.",
+    description:
+      "A redesigned official website with modern UI and enhanced features.",
     link: "https://csi.pce.ac.in/",
   },
   {
@@ -40,12 +44,14 @@ export const featuredProjects: FeaturedProjects = [
   },
   {
     title: "GPod AI",
-    description: "An AI-powered tool that converts articles into engaging podcasts.",
+    description:
+      "An AI-powered tool that converts articles into engaging podcasts.",
     link: "https://gpod-ai.vercel.app/",
   },
   {
     title: "Visual X",
-    description: "A text-to-video application built for Press Information Bureau (Govt. of India).",
+    description:
+      "A text-to-video application built for Press Information Bureau (Govt. of India).",
     link: "https://visualx-ai.vercel.app/",
   },
 ];
