@@ -54,11 +54,12 @@ export const experiences: WorkExperience[] = [
     },
     description: "",
     technologies: [
-      { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
+      { name: "React Expo", icon: SiExpo },
       { name: "TypeScript", icon: SiTypescript },
       { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "tRPC", icon: SiTrpc },
+      { name: "Prisma", icon: SiPrisma },
       { name: "PostgreSQL", icon: SiPostgresql },
     ],
     projects: [],

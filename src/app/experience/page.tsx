@@ -1,9 +1,35 @@
+import type { Metadata } from "next";
 import ExperienceTimeline from "@/components/Experience/ExperienceTimeline";
+import { siteConfig } from "@/lib/config";
 import { experiences } from "@/lib/experience";
 
-export const metadata = {
-  title: "Experience",
-  description: "My professional work experience and projects.",
+const pageTitle = "Experience";
+const pageDescription =
+  "My professional work experience, projects, and the technologies I've worked with.";
+
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: pageDescription,
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.name}`,
+    description: pageDescription,
+    url: `${siteConfig.url}/experience`,
+    type: "profile",
+    images: [
+      {
+        url: siteConfig.images.avatar,
+        width: 400,
+        height: 400,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: `${pageTitle} | ${siteConfig.name}`,
+    description: pageDescription,
+    images: [siteConfig.images.avatar],
+  },
 };
 
 export default function Experience() {
