@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 import type { NavItem as NavItemType } from "../../lib/navLinks";
+import { cn } from "../../lib/utils";
 
 export const NavItem = ({
   slug,
@@ -24,10 +25,10 @@ export const NavItem = ({
       onMouseLeave={() => setIsHovered(false)}
       onFocus={() => setIsHovered(true)}
       onBlur={() => setIsHovered(false)}
-      className={`
-          ${pathname === slug || isHovered ? "bg-zinc-600" : "bg-zinc-800"}
-          rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400
-      `}
+      className={cn(
+        "rounded-sm p-2 shadow duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-zinc-400",
+        pathname === slug || isHovered ? "bg-zinc-600" : "bg-zinc-800"
+      )}
     >
       <span aria-hidden="true">
         {React.createElement(icon, { width: "1rem", className: "icon" })}

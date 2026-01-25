@@ -10,6 +10,7 @@ import { SkipToContent } from "@/components/ui/SkipToContent";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { Toaster } from "@/components/ui/Toaster";
 import { siteConfig, themeConfig } from "@/lib/config";
+import { cn } from "@/lib/utils";
 import "./globals.css";
 
 const epilogue = Epilogue({
@@ -85,7 +86,7 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body
-        className={`${epilogue.variable} font-sans`}
+        className={cn(epilogue.variable, "font-sans")}
         suppressHydrationWarning
       >
         <SkipToContent />

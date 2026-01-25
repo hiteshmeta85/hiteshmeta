@@ -6,6 +6,9 @@
 @source "../lib/**/*.{js,ts,jsx,tsx}";
 @source "./**/*.{js,ts,jsx,tsx}";
 
+/* Enable class-based dark mode for next-themes compatibility */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: var(--font-epilogue), ui-sans-serif, system-ui, sans-serif;
 }
