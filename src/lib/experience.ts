@@ -8,9 +8,9 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiPrisma,
-  SiReact,
   SiShopify,
   SiStorybook,
+  SiSupabase,
   SiTailwindcss,
   SiTrpc,
   SiTypescript,
@@ -57,7 +57,6 @@ export const experiences: WorkExperience[] = [
       { name: "Next.js", icon: SiNextdotjs },
       { name: "React Expo", icon: SiExpo },
       { name: "TypeScript", icon: SiTypescript },
-      { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "tRPC", icon: SiTrpc },
       { name: "Prisma", icon: SiPrisma },
       { name: "PostgreSQL", icon: SiPostgresql },
@@ -136,10 +135,10 @@ export const experiences: WorkExperience[] = [
     description:
       "Led frontend development and managed backend development for in-house app solutions.",
     technologies: [
-      { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "TypeScript", icon: SiTypescript },
       { name: "Node.js", icon: SiNodedotjs },
+      { name: "Supabase", icon: SiSupabase },
     ],
     projects: [
       {
@@ -164,10 +163,10 @@ export const experiences: WorkExperience[] = [
     description:
       "Developed AI-driven web applications across diverse domains, including travel, education, and content creation.",
     technologies: [
-      { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "TypeScript", icon: SiTypescript },
       { name: "Node.js", icon: SiNodedotjs },
+      { name: "Supabase", icon: SiSupabase },
     ],
     projects: [
       {
@@ -212,9 +211,9 @@ export const experiences: WorkExperience[] = [
     description:
       "Worked on multiple projects including Neuz Org's SaaS platform and Consumer application. Contributed to a Food Entrepreneur-based SaaS. Interacted with international clients, delivering high-quality web solutions.",
     technologies: [
-      { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "TypeScript", icon: SiTypescript },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "Node.js", icon: SiNodedotjs },
     ],
     projects: [
