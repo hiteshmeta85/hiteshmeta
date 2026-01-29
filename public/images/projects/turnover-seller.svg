@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="50"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#fbbf24" stroke-width="0.4" stroke-opacity="0.2"/>
+    </pattern>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.04"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Ambient blobs -->
+  <ellipse cx="250" cy="120" rx="240" ry="180" fill="#f59e0b" opacity="0.06" filter="url(#softBlur)"/>
+  <ellipse cx="600" cy="350" rx="200" ry="160" fill="#d97706" opacity="0.05" filter="url(#softBlur)"/>
+
+  <!-- Dashboard panel - main -->
+  <g transform="translate(100, 60)">
+    <rect width="340" height="200" rx="12" fill="white" opacity="0.8" stroke="#fde68a" stroke-width="1"/>
+    <!-- Header bar -->
+    <rect x="1" y="1" width="338" height="36" rx="12" fill="#fef3c7" opacity="0.6"/>
+    <circle cx="20" cy="18" r="4" fill="#fbbf24" opacity="0.5"/>
+    <circle cx="34" cy="18" r="4" fill="#fde68a" opacity="0.5"/>
+    <circle cx="48" cy="18" r="4" fill="#fef9c3" opacity="0.5"/>
+    <!-- Table rows -->
+    <rect x="16" y="52" width="200" height="10" rx="4" fill="#fde68a" opacity="0.5"/>
+    <rect x="230" y="52" width="60" height="10" rx="4" fill="#fbbf24" opacity="0.3"/>
+    <line x1="16" y1="76" x2="324" y2="76" stroke="#fde68a" stroke-width="0.6" stroke-opacity="0.5"/>
+    <rect x="16" y="88" width="180" height="10" rx="4" fill="#fde68a" opacity="0.4"/>
+    <rect x="230" y="88" width="50" height="10" rx="4" fill="#fbbf24" opacity="0.25"/>
+    <line x1="16" y1="112" x2="324" y2="112" stroke="#fde68a" stroke-width="0.6" stroke-opacity="0.5"/>
+    <rect x="16" y="124" width="160" height="10" rx="4" fill="#fde68a" opacity="0.35"/>
+    <rect x="230" y="124" width="70" height="10" rx="4" fill="#fbbf24" opacity="0.2"/>
+    <line x1="16" y1="148" x2="324" y2="148" stroke="#fde68a" stroke-width="0.6" stroke-opacity="0.5"/>
+    <rect x="16" y="160" width="140" height="10" rx="4" fill="#fde68a" opacity="0.3"/>
+    <rect x="230" y="160" width="40" height="10" rx="4" fill="#fbbf24" opacity="0.15"/>
+  </g>
+
+  <!-- Stat cards -->
+  <g transform="translate(100, 290)">
+    <rect width="100" height="80" rx="10" fill="white" opacity="0.75" stroke="#fde68a" stroke-width="1"/>
+    <rect x="14" y="14" width="30" height="6" rx="3" fill="#fbbf24" opacity="0.4"/>
+    <rect x="14" y="34" width="50" height="14" rx="4" fill="#f59e0b" opacity="0.3"/>
+    <rect x="14" y="56" width="40" height="6" rx="3" fill="#fde68a" opacity="0.4"/>
+  </g>
+  <g transform="translate(220, 290)">
+    <rect width="100" height="80" rx="10" fill="white" opacity="0.75" stroke="#fde68a" stroke-width="1"/>
+    <rect x="14" y="14" width="35" height="6" rx="3" fill="#fbbf24" opacity="0.4"/>
+    <rect x="14" y="34" width="45" height="14" rx="4" fill="#d97706" opacity="0.3"/>
+    <rect x="14" y="56" width="55" height="6" rx="3" fill="#fde68a" opacity="0.4"/>
+  </g>
+  <g transform="translate(340, 290)">
+    <rect width="100" height="80" rx="10" fill="white" opacity="0.75" stroke="#fde68a" stroke-width="1"/>
+    <rect x="14" y="14" width="28" height="6" rx="3" fill="#fbbf24" opacity="0.4"/>
+    <rect x="14" y="34" width="55" height="14" rx="4" fill="#f59e0b" opacity="0.25"/>
+    <rect x="14" y="56" width="35" height="6" rx="3" fill="#fde68a" opacity="0.4"/>
+  </g>
+
+  <!-- Floating inventory boxes -->
+  <g transform="translate(520, 80)">
+    <!-- Stacked boxes -->
+    <rect width="80" height="80" rx="8" fill="white" opacity="0.6" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.4"/>
+    <rect x="8" y="8" width="64" height="64" rx="4" fill="#fef3c7" opacity="0.5"/>
+    <path d="M 20 40 L 40 28 L 60 40 L 40 52 Z" fill="#fbbf24" opacity="0.25"/>
+    <path d="M 20 40 L 40 52 L 40 72 L 20 60 Z" fill="#f59e0b" opacity="0.2"/>
+    <path d="M 60 40 L 40 52 L 40 72 L 60 60 Z" fill="#d97706" opacity="0.15"/>
+  </g>
+  <g transform="translate(630, 140) rotate(8)">
+    <rect width="65" height="65" rx="8" fill="white" opacity="0.45" stroke="#fbbf24" stroke-width="0.8" stroke-opacity="0.3"/>
+    <rect x="8" y="8" width="49" height="49" rx="4" fill="#fef3c7" opacity="0.4"/>
+    <path d="M 16 33 L 33 24 L 49 33 L 33 42 Z" fill="#fbbf24" opacity="0.2"/>
+  </g>
+  <g transform="translate(560, 220) rotate(-5)">
+    <rect width="55" height="55" rx="8" fill="white" opacity="0.35" stroke="#fbbf24" stroke-width="0.6" stroke-opacity="0.25"/>
+    <rect x="6" y="6" width="43" height="43" rx="4" fill="#fef3c7" opacity="0.3"/>
+  </g>
+
+  <!-- Connector arrows -->
+  <g stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" opacity="0.3" fill="none">
+    <path d="M 470 120 Q 500 100 520 95"/>
+    <path d="M 470 200 Q 510 180 555 225"/>
+  </g>
+
+  <!-- Corner accent -->
+  <g transform="translate(720, 380)" stroke="#fbbf24" stroke-width="0.8" fill="none" opacity="0.35">
+    <line x1="0" y1="24" x2="0" y2="0"/><line x1="0" y1="0" x2="24" y2="0"/>
+  </g>
+
+  <rect width="800" height="450" filter="url(#grain)" opacity="0.35"/>
+</svg>

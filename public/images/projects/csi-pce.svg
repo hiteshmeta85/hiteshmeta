@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff1f2"/>
+      <stop offset="100%" stop-color="#fce7f3"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="50"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.04"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Ambient blobs -->
+  <ellipse cx="300" cy="150" rx="260" ry="200" fill="#f43f5e" opacity="0.05" filter="url(#softBlur)"/>
+  <ellipse cx="550" cy="350" rx="220" ry="160" fill="#ec4899" opacity="0.06" filter="url(#softBlur)"/>
+
+  <!-- Abstract browser wireframe -->
+  <g transform="translate(140, 70)">
+    <rect width="520" height="310" rx="14" fill="white" opacity="0.7" stroke="#fda4af" stroke-width="1.2"/>
+    <!-- Browser bar -->
+    <rect x="1" y="1" width="518" height="40" rx="14" fill="#fff1f2" opacity="0.8"/>
+    <circle cx="22" cy="20" r="5" fill="#fda4af" opacity="0.5"/>
+    <circle cx="40" cy="20" r="5" fill="#fecdd3" opacity="0.5"/>
+    <circle cx="58" cy="20" r="5" fill="#ffe4e6" opacity="0.5"/>
+    <rect x="120" y="12" width="200" height="16" rx="8" fill="#fecdd3" opacity="0.3"/>
+
+    <!-- Nav bar -->
+    <rect x="20" y="56" width="480" height="24" rx="6" fill="#fce7f3" opacity="0.4"/>
+    <rect x="30" y="62" width="40" height="12" rx="4" fill="#fda4af" opacity="0.3"/>
+    <rect x="80" y="62" width="35" height="12" rx="4" fill="#fda4af" opacity="0.2"/>
+    <rect x="125" y="62" width="45" height="12" rx="4" fill="#fda4af" opacity="0.2"/>
+    <rect x="180" y="62" width="30" height="12" rx="4" fill="#fda4af" opacity="0.15"/>
+
+    <!-- Hero section -->
+    <rect x="20" y="96" width="220" height="16" rx="5" fill="#fb7185" opacity="0.25"/>
+    <rect x="20" y="120" width="180" height="10" rx="4" fill="#fda4af" opacity="0.2"/>
+    <rect x="20" y="138" width="200" height="10" rx="4" fill="#fda4af" opacity="0.15"/>
+    <rect x="20" y="160" width="90" height="28" rx="8" fill="url(#accent)" opacity="0.2"/>
+
+    <!-- Image placeholder -->
+    <rect x="280" y="96" width="220" height="100" rx="8" fill="#fce7f3" opacity="0.5"/>
+    <circle cx="390" cy="140" r="20" fill="#fda4af" opacity="0.2"/>
+    <polygon points="350,170 390,130 430,170" fill="#fb7185" opacity="0.12"/>
+
+    <!-- Cards row -->
+    <g transform="translate(20, 210)">
+      <rect width="145" height="80" rx="8" fill="#fce7f3" opacity="0.5"/>
+      <rect x="10" y="10" width="125" height="35" rx="5" fill="#fecdd3" opacity="0.3"/>
+      <rect x="10" y="54" width="80" height="8" rx="3" fill="#fda4af" opacity="0.2"/>
+      <rect x="10" y="66" width="50" height="6" rx="3" fill="#fda4af" opacity="0.12"/>
+    </g>
+    <g transform="translate(185, 210)">
+      <rect width="145" height="80" rx="8" fill="#fce7f3" opacity="0.5"/>
+      <rect x="10" y="10" width="125" height="35" rx="5" fill="#fecdd3" opacity="0.3"/>
+      <rect x="10" y="54" width="90" height="8" rx="3" fill="#fda4af" opacity="0.2"/>
+      <rect x="10" y="66" width="60" height="6" rx="3" fill="#fda4af" opacity="0.12"/>
+    </g>
+    <g transform="translate(350, 210)">
+      <rect width="145" height="80" rx="8" fill="#fce7f3" opacity="0.5"/>
+      <rect x="10" y="10" width="125" height="35" rx="5" fill="#fecdd3" opacity="0.3"/>
+      <rect x="10" y="54" width="70" height="8" rx="3" fill="#fda4af" opacity="0.2"/>
+      <rect x="10" y="66" width="55" height="6" rx="3" fill="#fda4af" opacity="0.12"/>
+    </g>
+  </g>
+
+  <!-- Floating decoration elements -->
+  <g filter="url(#glow)">
+    <circle cx="100" cy="100" r="4" fill="#f43f5e" opacity="0.4"/><circle cx="100" cy="100" r="2" fill="white"/>
+    <circle cx="720" cy="120" r="3.5" fill="#ec4899" opacity="0.35"/><circle cx="720" cy="120" r="1.5" fill="white"/>
+    <circle cx="90" cy="380" r="3" fill="#fb7185" opacity="0.3"/><circle cx="90" cy="380" r="1.5" fill="white"/>
+    <circle cx="730" cy="370" r="4" fill="#f43f5e" opacity="0.35"/><circle cx="730" cy="370" r="2" fill="white"/>
+  </g>
+
+  <!-- Cursor icon -->
+  <g transform="translate(680, 280)" opacity="0.4">
+    <path d="M 0 0 L 0 28 L 8 20 L 16 32 L 20 30 L 12 18 L 22 16 Z" fill="#f43f5e" opacity="0.5"/>
+  </g>
+
+  <!-- Code brackets decoration -->
+  <g transform="translate(40, 200)" stroke="#fda4af" stroke-width="1.5" fill="none" opacity="0.25" stroke-linecap="round">
+    <path d="M 20 0 L 10 15 L 20 30"/>
+    <path d="M 50 0 L 60 15 L 50 30"/>
+  </g>
+
+  <rect width="800" height="450" filter="url(#grain)" opacity="0.35"/>
+</svg>

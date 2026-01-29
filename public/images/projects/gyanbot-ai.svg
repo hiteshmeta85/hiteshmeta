@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="40%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="botFace" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="smallGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.04"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Ambient washes -->
+  <ellipse cx="400" cy="220" rx="350" ry="260" fill="#06b6d4" opacity="0.04" filter="url(#softBlur)"/>
+  <ellipse cx="200" cy="100" rx="220" ry="180" fill="#22d3ee" opacity="0.05" filter="url(#softBlur)"/>
+  <ellipse cx="650" cy="350" rx="200" ry="160" fill="#3b82f6" opacity="0.04" filter="url(#softBlur)"/>
+
+  <!-- Large central bot avatar -->
+  <g transform="translate(400, 195)" filter="url(#glow)">
+    <!-- Outer glow ring -->
+    <circle r="90" fill="none" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="6 8"/>
+    <circle r="78" fill="none" stroke="#06b6d4" stroke-width="0.8" stroke-opacity="0.12"/>
+
+    <!-- Bot head -->
+    <rect x="-52" y="-52" width="104" height="95" rx="28" fill="white" opacity="0.85" stroke="#a5f3fc" stroke-width="1.5"/>
+    <rect x="-52" y="-52" width="104" height="95" rx="28" fill="url(#botFace)"/>
+
+    <!-- Antenna -->
+    <line x1="0" y1="-52" x2="0" y2="-68" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="0" cy="-72" r="5" fill="#22d3ee" opacity="0.5"/>
+    <circle cx="0" cy="-72" r="2.5" fill="white" opacity="0.7"/>
+
+    <!-- Eyes - glowing -->
+    <g filter="url(#smallGlow)">
+      <rect x="-30" y="-24" width="22" height="16" rx="8" fill="#06b6d4" opacity="0.55"/>
+      <rect x="-26" y="-20" width="8" height="8" rx="4" fill="white" opacity="0.7"/>
+      <rect x="8" y="-24" width="22" height="16" rx="8" fill="#06b6d4" opacity="0.55"/>
+      <rect x="12" y="-20" width="8" height="8" rx="4" fill="white" opacity="0.7"/>
+    </g>
+
+    <!-- Mouth - LED grid -->
+    <g transform="translate(-24, 12)">
+      <rect x="0" y="0" width="48" height="12" rx="4" fill="#0e7490" opacity="0.15"/>
+      <rect x="4" y="3" width="6" height="6" rx="1.5" fill="#22d3ee" opacity="0.5"/>
+      <rect x="14" y="3" width="6" height="6" rx="1.5" fill="#22d3ee" opacity="0.65"/>
+      <rect x="24" y="3" width="6" height="6" rx="1.5" fill="#22d3ee" opacity="0.65"/>
+      <rect x="34" y="3" width="6" height="6" rx="1.5" fill="#22d3ee" opacity="0.5"/>
+    </g>
+
+    <!-- Ear panels -->
+    <rect x="-62" y="-20" width="8" height="30" rx="4" fill="#a5f3fc" opacity="0.4"/>
+    <rect x="54" y="-20" width="8" height="30" rx="4" fill="#a5f3fc" opacity="0.4"/>
+  </g>
+
+  <!-- Conversation bubbles floating around the bot -->
+  <!-- Bubble top-left -->
+  <g transform="translate(120, 70)">
+    <rect width="180" height="55" rx="16" fill="white" opacity="0.7" stroke="#a5f3fc" stroke-width="1"/>
+    <rect x="14" y="14" width="110" height="8" rx="3" fill="#67e8f9" opacity="0.4"/>
+    <rect x="14" y="28" width="80" height="8" rx="3" fill="#67e8f9" opacity="0.25"/>
+    <!-- Tail -->
+    <path d="M 160 55 L 170 68 L 148 55" fill="white" opacity="0.7" stroke="#a5f3fc" stroke-width="1"/>
+  </g>
+
+  <!-- Bubble top-right -->
+  <g transform="translate(530, 50)">
+    <rect width="200" height="50" rx="16" fill="url(#grad1)" opacity="0.12" stroke="#22d3ee" stroke-width="0.8"/>
+    <rect x="14" y="14" width="120" height="8" rx="3" fill="#06b6d4" opacity="0.25"/>
+    <rect x="14" y="28" width="90" height="8" rx="3" fill="#06b6d4" opacity="0.15"/>
+    <path d="M 40 50 L 30 63 L 52 50" fill="url(#grad1)" opacity="0.12" stroke="#22d3ee" stroke-width="0.8"/>
+  </g>
+
+  <!-- Bubble bottom-left -->
+  <g transform="translate(60, 300)">
+    <rect width="200" height="65" rx="16" fill="white" opacity="0.65" stroke="#a5f3fc" stroke-width="0.8"/>
+    <rect x="14" y="14" width="130" height="8" rx="3" fill="#67e8f9" opacity="0.35"/>
+    <rect x="14" y="28" width="100" height="8" rx="3" fill="#67e8f9" opacity="0.25"/>
+    <rect x="14" y="42" width="70" height="8" rx="3" fill="#67e8f9" opacity="0.15"/>
+    <path d="M 170 0 L 185 -14 L 155 0" fill="white" opacity="0.65" stroke="#a5f3fc" stroke-width="0.8"/>
+  </g>
+
+  <!-- Bubble bottom-right (user message) -->
+  <g transform="translate(560, 320)">
+    <rect width="170" height="50" rx="16" fill="url(#grad2)" opacity="0.12" stroke="#0ea5e9" stroke-width="0.8"/>
+    <rect x="14" y="14" width="100" height="8" rx="3" fill="#0ea5e9" opacity="0.2"/>
+    <rect x="14" y="28" width="60" height="8" rx="3" fill="#0ea5e9" opacity="0.15"/>
+    <path d="M 20 0 L 10 -12 L 35 0" fill="url(#grad2)" opacity="0.12" stroke="#0ea5e9" stroke-width="0.8"/>
+  </g>
+
+  <!-- Typing indicator bubble -->
+  <g transform="translate(320, 360)">
+    <rect width="80" height="36" rx="14" fill="white" opacity="0.6" stroke="#a5f3fc" stroke-width="0.8"/>
+    <circle cx="22" cy="18" r="4" fill="#22d3ee" opacity="0.35"/>
+    <circle cx="38" cy="18" r="4" fill="#22d3ee" opacity="0.5"/>
+    <circle cx="54" cy="18" r="4" fill="#22d3ee" opacity="0.65"/>
+    <path d="M 40 36 L 36 46 L 48 36" fill="white" opacity="0.6" stroke="#a5f3fc" stroke-width="0.8"/>
+  </g>
+
+  <!-- Radiating connection lines from bot to bubbles -->
+  <g stroke="#22d3ee" stroke-width="0.8" fill="none" stroke-dasharray="4 6" opacity="0.15">
+    <path d="M 350 160 Q 280 130 280 100"/>
+    <path d="M 450 160 Q 550 120 560 85"/>
+    <path d="M 350 240 Q 260 280 240 300"/>
+    <path d="M 450 240 Q 560 290 580 320"/>
+    <path d="M 400 280 Q 380 320 360 350"/>
+  </g>
+
+  <!-- Sparkle / AI magic particles -->
+  <g filter="url(#smallGlow)">
+    <g fill="#22d3ee">
+      <!-- 4-point stars -->
+      <g transform="translate(320, 110)" opacity="0.4">
+        <path d="M 0 -6 L 1.5 -1.5 L 6 0 L 1.5 1.5 L 0 6 L -1.5 1.5 L -6 0 L -1.5 -1.5 Z"/>
+      </g>
+      <g transform="translate(510, 160)" opacity="0.3">
+        <path d="M 0 -5 L 1.2 -1.2 L 5 0 L 1.2 1.2 L 0 5 L -1.2 1.2 L -5 0 L -1.2 -1.2 Z"/>
+      </g>
+      <g transform="translate(280, 260)" opacity="0.3">
+        <path d="M 0 -4 L 1 -1 L 4 0 L 1 1 L 0 4 L -1 1 L -4 0 L -1 -1 Z"/>
+      </g>
+      <g transform="translate(500, 280)" opacity="0.35">
+        <path d="M 0 -5 L 1.2 -1.2 L 5 0 L 1.2 1.2 L 0 5 L -1.2 1.2 L -5 0 L -1.2 -1.2 Z"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Small particles -->
+  <g fill="#06b6d4">
+    <circle cx="50" cy="40" r="1.8" opacity="0.2"/>
+    <circle cx="750" cy="50" r="1.5" opacity="0.18"/>
+    <circle cx="760" cy="420" r="1.5" opacity="0.12"/>
+    <circle cx="40" cy="410" r="1.3" opacity="0.15"/>
+    <circle cx="450" cy="420" r="1.5" opacity="0.12"/>
+  </g>
+  <g fill="#3b82f6">
+    <circle cx="100" cy="200" r="1.2" opacity="0.12"/>
+    <circle cx="700" cy="220" r="1.3" opacity="0.12"/>
+  </g>
+
+  <!-- Signal waves emanating from antenna -->
+  <g transform="translate(400, 120)" stroke="#22d3ee" fill="none" stroke-linecap="round" opacity="0.18">
+    <path d="M -10 -6 Q -16 0 -10 6" stroke-width="1.5"/>
+    <path d="M -18 -12 Q -28 0 -18 12" stroke-width="1.2"/>
+    <path d="M 10 -6 Q 16 0 10 6" stroke-width="1.5"/>
+    <path d="M 18 -12 Q 28 0 18 12" stroke-width="1.2"/>
+  </g>
+
+  <rect width="800" height="450" filter="url(#grain)" opacity="0.3"/>
+</svg>
