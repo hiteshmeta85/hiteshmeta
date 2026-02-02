@@ -21,41 +21,27 @@ No test framework is configured.
 
 ## Architecture
 
-### Routing (App Router)
+### Routing
 
-Routes: `/`, `/about`, `/experience`, `/skills`, `/links`, `/blogs`, `/blogs/[slug]`
-
-Pages are in `src/app/`. Most pages are server components that render static data from `src/lib/` TypeScript modules.
+App Router. Pages live in `src/app/` as server components. Explore the directory to discover routes.
 
 ### Data Layer
 
-All data lives in `src/lib/` as typed TypeScript objects:
-- `experience.ts` — work history (type `WorkExperience`)
-- `skills.ts` — skills by category (type `Skill`, enum `Category`)
-- `featuredProject.ts` — featured projects (type `FeaturedProject`)
-- `config.ts` — site metadata, theme defaults, SEO config
-- `navLinks.ts`, `socialLinks.ts` — navigation and social links
-
-Blog content is markdown/MDX in `src/content/blogs/` with YAML frontmatter (title, date, description, tags, published). `src/lib/blogs.ts` handles file reading and slug generation. Posts with `published: false` are hidden.
+Static data as typed TypeScript objects in `src/lib/`. Blog content is MDX in `src/content/blogs/` with YAML frontmatter (`title`, `date`, `description`, `tags`, `published`). Posts with `published: false` are hidden.
 
 ### Components
 
-- `src/components/Nav/` — Desktop sidebar (`Nav.tsx`) and mobile drawer (`MobileNav.tsx`), theme toggle
-- `src/components/ui/` — ThemeProvider (next-themes wrapper), Toaster, SkipToContent
-- `src/components/Experience/` — ExperienceTimeline
-- Feature components at `src/components/` root: FeaturedSection, SkillsSection, Footer, JsonLd
-
-Client components (`"use client"`) are limited to interactive elements (nav, theme toggle, toaster). Pages and data-display components are server components.
+Components in `src/components/`, organized by feature subdirectories. Client components (`"use client"`) are limited to interactive elements — pages and data-display components are server components.
 
 ### Styling
 
-Tailwind CSS v4 via PostCSS. Custom component classes (`.heading`, `.h1`-`.h6`, `.text`, `.link`, `.container`) defined in `src/app/globals.css`. Font: Epilogue (Google Fonts).
+Tailwind CSS v4 via PostCSS. Custom component classes defined in `src/app/globals.css`. Font: Epilogue (Google Fonts).
 
 Use the `cn()` utility from `src/lib/utils.ts` (clsx + tailwind-merge) for conditional/merged class names.
 
 ### MDX
 
-Configured via `@next/mdx` in `next.config.mjs`. Custom MDX component overrides in `src/lib/mdx-components.tsx`. Plugins: remark-gfm, rehype-highlight, rehype-slug.
+Configured via `@next/mdx` in `next.config.mjs`. Custom MDX component overrides in `src/lib/mdx-components.tsx`.
 
 ## Code Conventions
 
